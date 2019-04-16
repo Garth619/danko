@@ -31,6 +31,9 @@
 
 <style>
 
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700,800|Unna');
+
+@import url("https://use.typekit.net/njn0djq.css");
 
 <?php the_field( 'review_css','option'); ?>
 
@@ -46,13 +49,38 @@
 
 <body <?php body_class(); ?>>
 	
-	
 	<header>
 		
-		<?php // wp_nav_menu( array( 'container_class' => 'menu-header', 'theme_location' => 'main_menu' ) ); ?>
+		<div class="header_left">
+			
+			<a class="logo" href="<?php bloginfo('url');?>">
+				
+				<img src="<?php bloginfo('template_directory');?>/images/logo.svg"/>
+				
+			</a><!-- logo -->
+			
+		</div><!-- header_left -->
+		
+		<div class="header_middle">
+			
+			<nav>
+			
+				<?php wp_nav_menu( array( 'container_class' => 'menu-header', 'theme_location' => 'main_menu' ) ); ?>
+			
+			</nav>
+			
+		</div><!-- header_middle -->
+		
+		<div class="header_right">
+			
+			<span class="free_consultation">Free Consultation</span><!-- free_consultation -->
+			
+			<a class="tel" href="">(650) 453-3600</a><!-- tel -->
+			
+		</div><!-- header_right -->
 		
 	</header>
 				
-
+	
 
 			

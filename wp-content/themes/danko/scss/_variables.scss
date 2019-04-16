@@ -1,15 +1,75 @@
-$themePath: '/wp-content/themes/starter/';
+$themePath: '/wp-content/themes/danko/';
 
 
 
 
-/*
-@mixin quatro_reg {
-  font-family: quatro, sans-serif;
+// fonts
+
+// unna
+
+@mixin unna {
+  font-family: 'Unna', serif;
 	font-weight: 400;
 	font-style: normal;
 }
 
-@include quatro_reg;
 
-*/
+// poppins
+
+
+@mixin poppins_reg {
+  font-family: 'Poppins', sans-serif;
+	font-weight: 400;
+	font-style: normal;
+}
+
+@mixin poppins_medium {
+  font-family: 'Poppins', sans-serif;
+	font-weight: 500;
+	font-style: normal;
+}
+
+@mixin poppins_bold {
+  font-family: 'Poppins', sans-serif;
+	font-weight: 700;
+	font-style: normal;
+}
+
+@mixin poppins_extrabold {
+  font-family: 'Poppins', sans-serif;
+	font-weight: 800;
+	font-style: normal;
+}
+
+
+
+// questa grande
+
+
+@mixin questa_regular {
+  font-family: questa-grande, serif;
+	font-weight: 400;
+	font-style: normal;
+}
+
+@mixin questa_medium {
+  font-family: questa-grande, serif;
+	font-weight: 500;
+	font-style: normal;
+}
+
+
+@mixin questa_medium_italic {
+  font-family: questa-grande, serif;
+	font-weight: 500;
+	font-style: italic;
+}
+
+
+// colors
+
+
+$blue: #2182ed;
+$gold: #bf8929;
+$black: #0b0b1c;
+$grey: #f1f1f1;
