@@ -128,7 +128,7 @@
 		"oAP": "/images/hero-ipad.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/images/hero-mobile.jpg": {
@@ -139,7 +139,7 @@
 		"oAP": "/images/hero-mobile.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/images/hero.jpg": {

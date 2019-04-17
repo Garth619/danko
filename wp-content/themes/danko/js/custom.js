@@ -325,7 +325,7 @@ $("ul > li.menu-item-has-children > a[href='#']").removeAttr("href");
 
 	function checkWidthcase() {
     
-    if (windowWidth > 1066) {
+    if (windowWidth > 1510) {
         
       
     $('nav').addClass('desktop');
