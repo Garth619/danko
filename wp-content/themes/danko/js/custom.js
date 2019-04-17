@@ -6,6 +6,9 @@
 jQuery(document).ready(function($){
 	
 
+
+	var windowWidth = $(window).width();
+	
 	
 	 /* Modernizr - check if browser supports webp for section_one. 
      --------------------------------------------------------------------------------------- */
@@ -308,6 +311,34 @@ $('.sec_three_slider').slick({
 
 
 $("ul > li.menu-item-has-children > a[href='#']").removeAttr("href");
+
+
+
+// dekstop nav
+
+
+
+	
+
+
+
+
+	function checkWidthcase() {
+    
+    if (windowWidth > 1066) {
+        
+      
+    $('nav').addClass('desktop');
+    	   		
+    		
+    } 
+    
+   };
+	
+
+checkWidthcase();
+
+
 
 
   
