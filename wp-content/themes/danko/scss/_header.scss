@@ -158,6 +158,19 @@ nav.desktop {
 }
 
 
+
+@media screen and (min-width: 1510px) {
+	
+	
+	
+	nav.laptop {
+		display: none;
+	}
+	
+	
+} /* Media Query */
+
+
 @media screen and (max-width: 1510px) {
 	
 	
