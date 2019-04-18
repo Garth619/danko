@@ -178,7 +178,8 @@ nav.desktop {
 		left:0;
 		width:100%;
 		padding:0;
-// 		display: none;
+		opacity: 0;
+		visibility: hidden;
 	}
 	
 	nav.laptop {
@@ -253,7 +254,8 @@ nav.desktop {
 		background: $black;
 		flex-grow:1;
 		display: flex;
-		
+		transform: translateX(-100%);
+		transition: all 900ms cubic-bezier(.17,.66,.34,.98);
 	}
 	
 	.laptop_col {
@@ -272,7 +274,94 @@ nav.desktop {
 	.laptop_form {
 		flex-basis:565px;
 		display: block;
-		background: #fff;
+		background: top left repeat;
+		padding:57px 63px;
+		transform: translateX(100%);
+		transition: all 900ms cubic-bezier(.17,.66,.34,.98);
+		.laptop_form_inner {
+			background: #fff;
+			padding:38px;
+			span.form_title {
+				color:$blue;
+				text-transform: lowercase;
+				display: block;
+				text-align: center;
+				font-size: 40px;
+				@include questa_regular;
+			}
+			span.required {
+				display: block;
+				text-align: center;
+				text-transform: uppercase;
+				font-size: 12px;
+				margin-top:10px;
+				letter-spacing: 0.4em;
+				@include poppins_extrabold;
+				span {
+					color:$gold;
+				}
+			}
+			.gform_wrapper {
+				ul {
+					list-style: none;
+					margin-top:33px;
+					li {
+						margin-bottom:15px;
+						label {
+							display: none;
+						}
+						input,textarea {
+							border:none;
+							padding:22px 22px 20px;
+							text-transform: uppercase;
+							font-size:14px;
+							letter-spacing: 0.2em;
+							background: $grey;
+							width:100%;
+							border-bottom:5px solid transparent;
+							transition: all 200ms ease-in-out;
+							@include poppins_extrabold;
+							&:focus {
+								border-bottom:5px solid $gold;
+							}
+						}
+						textarea {
+							height:126px;
+						}
+					}
+				}
+				input[type="submit"] {
+					background: $blue;
+					cursor: pointer;
+					margin: 18px auto 0;
+					border:none;
+					width:100%;
+					display: block;
+					max-width:261px;
+					color:#fff;
+					border:2px solid $blue;
+					font-size: 28px;
+					letter-spacing: 0.025em;
+					text-transform: lowercase;
+					padding:18px 45px;
+					transition: all 200ms ease-in-out;
+					@include questa_regular;
+					&:hover {
+						color:$blue;
+						background: transparent;
+					}
+				}
+				.gfield_description, .validation_message {
+					color:$gold;
+					text-transform: uppercase;
+					font-size: 12px;
+					margin-top:4px;
+					padding-left:22px;
+					letter-spacing: 0.1em;
+					@include poppins_bold;
+				}
+			}
+		}
 	}
 	
 	
@@ -299,6 +388,8 @@ nav.desktop {
 		flex-shrink:0;
 		text-align: center;
 		padding:22px 20px 0;
+		cursor: pointer;
+		position: relative;
 		span {
 			display: block;
 		}
@@ -317,6 +408,81 @@ nav.desktop {
 			text-indent:0.3em;
 			@include poppins_extrabold;
 		}
+		.menu_close {
+			width:100%;
+			height:100%;
+			background: $blue;
+			position: absolute;
+			top:0;
+			left:0;
+			z-index:1;
+			opacity: 0;
+			visibility: hidden;
+			transition: all 200ms ease-in-out;
+			cursor: pointer;
+			&:before, &:after {
+				content:"";
+				display: block;
+				width:55px;
+				height:2px;
+				background:#fff;
+				position: absolute;
+				top:40px;
+				left:25px;
+			}
+			&:before {
+				transform: rotate(-45deg);
+			}
+			&:after {
+				transform: rotate(45deg);
+			}
+		}
+		.menu_close.open {
+			opacity: 1;
+			visibility: visible;
+		}
+	}
+	
+	
+	
+	nav.laptop {
+/*
+		opacity: 0;
+		visibility: hidden;
+		transition: all 100ms ease-in-out;
+*/
+		
+	}
+	
+	
+	.header_middle.open {
+		opacity: 1;
+		visibility: visible;
+		
+	}
+	
+	
+
+	
+	
+	
+	.nav_inner.open {
+		transform: translateX(0%);
+		transition-delay: 100ms;
+	}
+	
+	.laptop_form.open {
+		transform: translateX(0%);
+		transition-delay: 100ms;
+	}
+	
+	
+	.nav_inner.open.close {
+		transform: translateX(-100%);
+	}
+	
+	.laptop_form.open.close {
+		transform: translateX(100%);
 	}
 	
 	

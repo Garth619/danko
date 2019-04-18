@@ -344,11 +344,40 @@ $("ul > li.menu-item-has-children > a[href='#']").removeAttr("href");
     			$('.laptop_sub_nav').empty();
 	  
 				$(this).next('ul.sub-menu').clone().appendTo('.laptop_sub_nav').fadeIn();
+				
+				
 
-				//$('.nav_dropdown').delay(1500).queue(function(){
-     
-				//$(this).removeClass('slidein slideout').dequeue();
+				
   
+			});
+			
+			
+			
+			$('.menu_wrapper_inner').on('click', function(e) {
+			  
+				$('.header_middle, .menu_close, .nav_inner, .laptop_form').addClass('open');
+				
+			});
+			
+			
+			$('.menu_close').on('click', function(e) {
+				
+				$(this).removeClass('open');
+				
+				
+				$('.nav_inner, .laptop_form').addClass('close');
+				
+				
+				$('.header_middle').delay(1200).queue(function(){
+     
+					$('.nav_inner, .laptop_form').removeClass('open close').dequeue();
+					
+					$(this).removeClass('open').dequeue();
+				
+				
+			});
+				
+			  
 			});
     	   		
     		

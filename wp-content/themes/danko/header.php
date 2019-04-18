@@ -81,9 +81,17 @@
 				
 				</div><!-- nav_inner -->
 				
-				<div class="laptop_form">
+				<div class="laptop_form" style="background:url(<?php bloginfo('template_directory');?>/images/pattern.jpg)">
 					
-					<?php gravity_form(1, false, false, false, '', true, 12); ?>
+					<div class="laptop_form_inner">
+					
+						<span class="form_title">Free Consultation</span><!-- form_title -->
+						
+						<span class="required"><span>*</span>-Required</span><!-- required -->
+					
+						<?php gravity_form(1, false, false, false, '', true, 12); ?>
+					
+					</div><!-- laptop_form_inner -->
 					
 				</div><!-- laptop_form -->
 			
@@ -102,12 +110,18 @@
 			</div><!-- header_right_inner -->
 			
 			<div class="menu_wrapper">
+				
+				<div class="menu_wrapper_inner">
 			
-			<span class="menu_bar"></span><!-- menu_bar -->
-			<span class="menu_bar"></span><!-- menu_bar -->
-			<span class="menu_bar"></span><!-- menu_bar -->
+					<span class="menu_bar"></span><!-- menu_bar -->
+					<span class="menu_bar"></span><!-- menu_bar -->
+					<span class="menu_bar"></span><!-- menu_bar -->
 			
-			<span class="menu_title">Menu</span><!-- menu_title -->
+					<span class="menu_title">Menu</span><!-- menu_title -->
+			
+				</div><!-- menu_wrapper_inner -->
+			
+			<div class="menu_close"></div><!-- menu_close -->
 			
 		</div><!-- menu_wrapper -->
 			
