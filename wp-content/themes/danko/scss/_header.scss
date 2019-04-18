@@ -122,6 +122,9 @@ nav.desktop {
 }
 
 
+.laptop_form {
+	display: none;
+}
 
 
 .header_right {
@@ -159,18 +162,129 @@ nav.desktop {
 	
 	
 	
+	header {
+		justify-content: space-between;
+		height: 90px;
+		position: fixed;
+		top:0;
+		left:0;
+		
+	}
 	
 	
+	.header_middle {
+		position: fixed;
+		top: 90px;
+		left:0;
+		width:100%;
+		padding:0;
+// 		display: none;
+	}
+	
+	nav.laptop {
+		display: flex;
+		width:100%;
+		height:100vh;
+		.nav_inner {
+			ul {
+				list-style: none;
+				margin:0;
+				li {
+					text-transform: lowercase;
+					margin-bottom:40px;
+					font-size:20px;
+					letter-spacing: 0.05em;
+					a {
+						color:#fff;
+						text-decoration: none;
+						transition: all 200ms ease-in-out;
+						cursor: pointer;
+						&:hover {
+							color:$blue;
+						}
+					}
+				}
+			}
+			ul.menu {
+				> li.current-menu-item, > li.current-menu-ancestor  {
+					> a {
+							color:$blue;
+					}
+				}
+				> li.menu-item-has-children {
+						> a.active {
+								color:$blue;
+						}
+						> a {
+								&:after {
+									content:"";
+									display: inline-block;
+									width: 0; 
+									height: 0; 
+									border-top: 5px solid transparent;
+									border-bottom: 5px solid transparent;
+									border-left: 5px solid $blue;
+									vertical-align: top;
+									margin:6px 0 0 15px;
+								}
+						}
+				}
+				> li {
+					
+					@include poppins_bold;
+				}
+			}
+			ul.sub-menu {
+				display: none;
+				li {
+					@include poppins_medium;
+				}
+				> li.current-menu-item {
+					> a {
+							color:$blue;
+					}
+				}
+			}
+		}
+	}
 	
 	
-	nav {
-		display: none;
+	.nav_inner {
+		background: $black;
+		flex-grow:1;
+		display: flex;
+		
+	}
+	
+	.laptop_col {
+		flex-basis:50%;
+		display: flex;
+		padding:0 35px;
+		align-items: center;
+		
+	}
+	
+	.laptop_col_one {
+		justify-content: center;
+	}
+	
+	
+	.laptop_form {
+		flex-basis:565px;
+		display: block;
+		background: #fff;
 	}
 	
 	
 	.header_right {
-		padding-right: 20px;
-		padding-top: 15px;
+		padding-right: 0px;
+		padding-top: 0px;
+		display: flex;
+		flex-basis: 321px;
+		.header_right_inner {
+			padding-right:24px;
+			padding-top:15px;
+		}
 		a.tel {
 			font-size:30px;
 			letter-spacing: 0.025em;
@@ -212,11 +326,7 @@ nav.desktop {
 @media screen and (max-width: 1066px) {
 	
 	
-	header {
-		position: fixed;
-		top:0;
-		lefT:0;
-	}
+	
 	
 	.header_left {
 		padding-left: 16px;
@@ -262,13 +372,19 @@ nav.desktop {
 	}
 	
 	.header_right {
-		padding:21px 0 0 35px;;
+		padding:0px 0 0 35px;
 		height:89px;
 		flex-basis: auto;
 		flex-grow:1;
 		background: #fff;
 		text-align: left;
 	}
+	
+	.header_right_inner {
+		flex-grow: 1;
+	}
+	
+	
 	
 	
 } /* Media Query */

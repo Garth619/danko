@@ -130,6 +130,20 @@ a.free_consult_button {
 }
 
 
+@media screen and (max-width: 1510px) {
+	
+	
+	
+		#section_one {
+			margin-top: 90px;
+		}
+	
+	
+	
+	
+} /* Media Query */
+
+
 @media screen and (max-width: 1475px) {
 	
 	
@@ -290,10 +304,7 @@ a.free_consult_button {
 @media screen and (max-width: 1066px) {
 	
 	
-	#section_one {
-		margin-top: 97px;
-	}
-	
+
 	
 	.play_button_wrapper {
 		&:before {

@@ -318,11 +318,6 @@ $("ul > li.menu-item-has-children > a[href='#']").removeAttr("href");
 
 
 
-	
-
-
-
-
 	function checkWidthcase() {
     
     if (windowWidth > 1510) {
@@ -333,10 +328,55 @@ $("ul > li.menu-item-has-children > a[href='#']").removeAttr("href");
     		
     } 
     
+    
+    if (windowWidth <= 1510 && windowWidth > 1066) {
+        
+      
+    		$('nav').addClass('laptop');
+    		
+    		
+    		$('.nav_inner ul.menu > li.menu-item-has-children > a').on('click', function(e) {
+    		  
+    			$('.nav_inner ul.menu > li.menu-item-has-children > a').removeClass('active');
+    			
+    			$(this).addClass('active');
+    			
+    			$('.laptop_sub_nav').empty();
+	  
+				$(this).next('ul.sub-menu').clone().appendTo('.laptop_sub_nav').fadeIn();
+
+				//$('.nav_dropdown').delay(1500).queue(function(){
+     
+				//$(this).removeClass('slidein slideout').dequeue();
+  
+			});
+    	   		
+    		
+    }
+    
    };
+   
+   
+    if (windowWidth <= 1066) {
+	    
+	    $('nav').addClass('tablet');
+	    
+    }
 	
 
 checkWidthcase();
+
+
+
+
+
+
+
+
+
+// current page clone
+
+$('nav ul.menu > li.current-menu-ancestor > a').next('ul.sub-menu').clone().appendTo('.nav_clone').show();
 
 
 

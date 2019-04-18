@@ -64,8 +64,28 @@
 		<div class="header_middle">
 			
 			<nav>
+				
+				<div class="nav_inner">
+				
+					<div class="laptop_col_one laptop_col">
 			
-				<?php wp_nav_menu( array( 'container_class' => 'menu-header', 'theme_location' => 'main_menu' ) ); ?>
+						<?php wp_nav_menu( array( 'container_class' => 'menu-header', 'theme_location' => 'main_menu' ) ); ?>
+				
+					</div><!-- laptop_col_one -->
+					
+					<div class="laptop_col_two laptop_col">
+						
+						<div class="laptop_sub_nav"></div><!-- laptop_sub_nav -->
+						
+					</div><!-- laptop_col_two -->
+				
+				</div><!-- nav_inner -->
+				
+				<div class="laptop_form">
+					
+					<?php gravity_form(1, false, false, false, '', true, 12); ?>
+					
+				</div><!-- laptop_form -->
 			
 			</nav>
 			
@@ -73,13 +93,15 @@
 		
 		<div class="header_right">
 			
-			<span class="free_consultation">Free Consultation</span><!-- free_consultation -->
+			<div class="header_right_inner">
 			
-			<a class="tel" href="">(650) 453-3600</a><!-- tel -->
+				<span class="free_consultation">Free Consultation</span><!-- free_consultation -->
 			
-		</div><!-- header_right -->
-		
-		<div class="menu_wrapper">
+				<a class="tel" href="">(650) 453-3600</a><!-- tel -->
+			
+			</div><!-- header_right_inner -->
+			
+			<div class="menu_wrapper">
 			
 			<span class="menu_bar"></span><!-- menu_bar -->
 			<span class="menu_bar"></span><!-- menu_bar -->
@@ -88,6 +110,8 @@
 			<span class="menu_title">Menu</span><!-- menu_title -->
 			
 		</div><!-- menu_wrapper -->
+			
+		</div><!-- header_right -->
 		
 	</header>
 				
