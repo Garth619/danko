@@ -24,9 +24,23 @@
 	flex-basis:23.6%;
 	height:456px;
 	position: relative;
+	box-shadow: 6.889px 11.025px 31.68px 1.32px rgba(0, 0, 0, 0);
+	&:after {
+	  content:"";
+	  display: block;
+	  position: absolute;
+		left:0;
+		width:100%;
+		height:100%;
+		top: 50%;
+		transform: translateY(-50%);
+		transition: all 450ms cubic-bezier(.17,.66,.34,.98);
+		background:#fff;
+  }
 	&:hover {
-		.sec_two_reg {
+		&:after {
 			height:calc(100% + 50px);
+			box-shadow: 6.889px 11.025px 31.68px 1.32px rgba(0, 0, 0, 0.18);
 		}
 		.sec_two_hover {
 			opacity: 1;
@@ -37,14 +51,10 @@
 
 
 .sec_two_reg {
-	background:#fff;
-	position: absolute;
-	left:0;
+	position: relative;
+	z-index:1;
 	width:100%;
 	height:100%;
-	top: 50%;
-  transform: translateY(-50%);
-  transition: all 500ms cubic-bezier(.17,.66,.34,.98);
 	.sec_two_reg_inner {
 		text-align: center;
 		padding-top:1px;
@@ -101,8 +111,52 @@
 	height:100%;
 	transition: all 300ms linear;
 	z-index:1;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+	padding:0 35px;
 	opacity: 0;
 	visibility: hidden;
+	span.sec_two_hover_title {
+		display: block;
+		margin:0 auto;
+		text-transform: uppercase;
+		color:$blue;
+		font-size: 16px;
+		letter-spacing: 0.25em;
+		margin-bottom:17px;
+		@include poppins_extrabold;
+	}
+	span.sec_two_content {
+		color:#959595;
+		font-size: 18px;
+		line-height: 35px;
+		max-width: 330px;
+		margin:0 auto 40px;
+		@include poppins_medium;
+	}
+	a.sec_two_readmore {
+		border:1px solid $blue;
+		display: block;
+		width:173px;
+		margin:0 auto;
+		text-transform: uppercase;
+		text-decoration: none;
+		font-size: 14px;
+		letter-spacing: 0.25em;
+		color:$blue;
+		padding:19px 0px;
+		transition: all 200ms ease-in-out;
+		@include poppins_extrabold;
+		&:hover {
+			background: $blue;
+			color:#fff;
+		}
+	}
 }
+
+
+
 
 

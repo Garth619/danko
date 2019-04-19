@@ -22,7 +22,15 @@
 						
 					</div><!-- sec_two_reg_inner -->
 				
-				<div class="sec_two_hover">hover</div><!-- sec_two_hover -->
+				<div class="sec_two_hover">
+					
+						<span class="sec_two_hover_title">Wrongful Death</span><!-- sec_two_hover_title -->
+					
+						<span class="sec_two_content">Our client was walking down the sidewalk on her lunch break when there was an explosion in an underground electrical vault that blew off a manhole cover and severely burned her.</span><!-- sec_two_content -->
+						
+						<a class="sec_two_readmore" href="">Read More</a><!-- sec_two_readmore -->
+					
+				</div><!-- sec_two_hover -->
 				
 				</div><!-- sec_two_reg -->
 				
@@ -46,7 +54,15 @@
 						
 					</div><!-- sec_two_reg_inner -->
 				
-				<div class="sec_two_hover">hover</div><!-- sec_two_hover -->
+				<div class="sec_two_hover">
+					
+					<span class="sec_two_hover_title">Wrongful Death</span><!-- sec_two_hover_title -->
+					
+					<span class="sec_two_content">Our client was walking down the sidewalk on her lunch break when there was an explosion in an underground electrical vault that blew off a manhole cover and severely burned her.</span><!-- sec_two_content -->
+					
+					<a class="sec_two_readmore" href="">Read More</a><!-- sec_two_readmore -->
+					
+				</div><!-- sec_two_hover -->
 				
 				</div><!-- sec_two_reg -->
 				
@@ -70,7 +86,15 @@
 						
 					</div><!-- sec_two_reg_inner -->
 				
-				<div class="sec_two_hover">hover</div><!-- sec_two_hover -->
+				<div class="sec_two_hover">
+					
+					<span class="sec_two_hover_title">Wrongful Death</span><!-- sec_two_hover_title -->
+					
+					<span class="sec_two_content">Our client was walking down the sidewalk on her lunch break when there was an explosion in an underground electrical vault that blew off a manhole cover and severely burned her.</span><!-- sec_two_content -->
+					
+					<a class="sec_two_readmore" href="">Read More</a><!-- sec_two_readmore -->
+					
+				</div><!-- sec_two_hover -->
 				
 				</div><!-- sec_two_reg -->
 				
@@ -94,7 +118,15 @@
 						
 					</div><!-- sec_two_reg_inner -->
 				
-				<div class="sec_two_hover">hover</div><!-- sec_two_hover -->
+				<div class="sec_two_hover">
+					
+					<span class="sec_two_hover_title">Wrongful Death</span><!-- sec_two_hover_title -->
+					
+					<span class="sec_two_content">Our client was walking down the sidewalk on her lunch break when there was an explosion in an underground electrical vault that blew off a manhole cover and severely burned her.</span><!-- sec_two_content -->
+					
+					<a class="sec_two_readmore" href="">Read More</a><!-- sec_two_readmore -->
+					
+				</div><!-- sec_two_hover -->
 				
 				</div><!-- sec_two_reg -->
 				
