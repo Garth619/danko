@@ -1,7 +1,14 @@
 
 body {
-	color:$black;;
+	color:$black;
+	overflow-y: scroll;
 }
+
+
+body.fixed {
+	overflow-y: hidden;
+}
+
 .alignleft,
 img.alignleft {
 	display: inline;

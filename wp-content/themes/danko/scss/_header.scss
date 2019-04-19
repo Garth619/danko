@@ -181,7 +181,6 @@ nav.desktop {
 		position: fixed;
 		top:0;
 		left:0;
-		
 	}
 	
 	
@@ -190,10 +189,11 @@ nav.desktop {
 		top: 90px;
 		left:0;
 		width:100%;
+		height: 100%;
 		padding:0;
 		opacity: 0;
 		visibility: hidden;
-	}
+			}
 	
 	nav.laptop {
 		display: flex;
@@ -266,6 +266,7 @@ nav.desktop {
 	.nav_inner {
 		background: $black;
 		flex-grow:1;
+		height:100%;
 		display: flex;
 		transform: translateX(-100%);
 		transition: all 900ms cubic-bezier(.17,.66,.34,.98);
@@ -274,24 +275,34 @@ nav.desktop {
 	.laptop_col {
 		flex-basis:50%;
 		display: flex;
-		padding:0 35px;
+		padding:0px 35px 0;
+		max-height:700px;
 		align-items: center;
 		
 	}
 	
 	.laptop_col_one {
 		justify-content: center;
+		
+	}
+	
+	.laptop_col_two {
+		
 	}
 	
 	
 	.laptop_form {
 		flex-basis:565px;
 		display: block;
+		height:100%;
 		background: top left repeat;
 		padding:57px 63px;
 		transform: translateX(100%);
 		transition: all 900ms cubic-bezier(.17,.66,.34,.98);
+		overflow-y: scroll;
+		padding-bottom:150px;
 		.laptop_form_inner {
+			padding-bottom:245px;
 			background: #fff;
 			padding:38px;
 			span.form_title {
@@ -457,15 +468,7 @@ nav.desktop {
 	}
 	
 	
-	
-	nav.laptop {
-/*
-		opacity: 0;
-		visibility: hidden;
-		transition: all 100ms ease-in-out;
-*/
-		
-	}
+
 	
 	
 	.header_middle.open {
@@ -497,6 +500,83 @@ nav.desktop {
 	.laptop_form.open.close {
 		transform: translateX(100%);
 	}
+	
+	
+} /* Media Query */
+
+
+
+@media screen and (max-width: 1175px) {
+	
+	
+	
+	
+	.header_middle {
+		opacity: 1;
+		visibility: visible;
+		display: block;
+	}
+	
+	nav.tablet {
+		width:100%;
+		ul {
+			li {
+				list-style: none;
+				text-transform: lowercase;
+				a {
+					color:#fff;
+					text-decoration: none;
+				}
+			}
+		}
+		ul.menu {
+			> li.menu-item-has-children {
+					> a {
+						&:after {
+							content:"";
+							display: inline-block;
+							width: 0; 
+							height: 0; 
+							width: 0; 
+							height: 0; 
+							border-left: 5px solid transparent;
+							border-right: 5px solid transparent;
+							border-top: 6px solid $blue;
+							vertical-align: top;
+							margin:11px 0 0 20px;
+						}
+					}
+			}
+			> li {
+				font-size: 25px;
+				letter-spacing: 0.05em;
+				 > a {
+					 @include poppins_bold;
+				 }
+			}
+		}
+	}
+	
+	
+	.nav_inner {
+		transform: translateX(0);
+		display: block;
+	}
+	
+	.laptop_col_one {
+		height:100vh;
+		display: block;
+	}
+	
+	.laptop_form {
+		display: none;
+	}
+	
+	.laptop_col_two {
+		display: none;
+		
+	}
+	
 	
 	
 } /* Media Query */
