@@ -321,8 +321,13 @@ a.free_consult_button {
 	
 	
 	#section_one {
-		margin-top: 197px;
+		margin-top: 0px;
 		height:535px;
+	}
+	
+	
+	#section_one.visible {
+		margin-top:89px;
 	}
 	
 	

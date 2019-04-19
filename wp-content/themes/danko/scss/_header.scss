@@ -651,12 +651,29 @@ nav.desktop {
 	
 	header {
 		flex-wrap:wrap;
-		
+		position: relative;
+		height:auto;
+	}
+	
+	
+	header.visible {
+		.header_middle {
+			position: fixed;
+			top:89px;
+		}
+		.header_right {
+			position: fixed;
+			width:100%;
+			top:0;
+			left:0;
+		}
 	}
 	
 	
 	.header_middle {
 		display: none;
+		top: 197px;
+		position: absolute;
 	}
 	
 	
@@ -681,13 +698,36 @@ nav.desktop {
 		flex-grow:1;
 		background: #fff;
 		text-align: left;
+		.header_right_inner {
+			flex-grow: 1;
+			padding-top:19px;
+		}
 	}
 	
-	.header_right_inner {
-		flex-grow: 1;
+	
+	
+	nav.tablet {
+		text-align: left;
+		ul.menu {
+			> li.menu-item-has-children {
+				> a {
+					 &:after {
+						 position: relative;
+						 top: 22px;
+					 }
+				}
+			}
+		}
 	}
 	
+	.nav_inner {
+		height: 100vh;
+	}
+		
 	
+	.laptop_col_one {
+		padding:0 65px;
+	}
 	
 	
 } /* Media Query */

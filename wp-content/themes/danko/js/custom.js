@@ -230,7 +230,9 @@ jQuery(document).ready(function($){
 		
 		
 
-    // createWaypoint('section_one', '.sticky_header', 'visible', -300, null, true);
+    createWaypoint('section_one', 'header', 'visible', 89, null, true);
+    createWaypoint('section_one', '#section_one', 'visible', 89, null, true);
+    //createWaypoint('section_one', '#section_one', 'visible', 89, null, true);
     
    
 
