@@ -397,7 +397,9 @@ $("ul > li.menu-item-has-children > a[href='#']").removeAttr("href");
 	    
 	    $('.menu_wrapper_inner').on('click', function(e) {
 	      
-	    		$('.header_middle').slideToggle(300);
+	    		$('.header_middle').slideDown(350);
+	    		
+	    		$('.menu_close').addClass('open');
 	    
 	    });
 	    
@@ -408,7 +410,18 @@ $("ul > li.menu-item-has-children > a[href='#']").removeAttr("href");
     			
     			$(this).addClass('active');
     			
+    			$(this).next('ul.sub-menu').slideToggle(350);
     			
+    			
+			});
+			
+			
+			$('.menu_close').on('click', function(e) {
+			  
+				$('.header_middle').slideUp(300);
+				
+				$('.menu_close').removeClass('open');
+			
 			});
 	    
 	    
