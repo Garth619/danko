@@ -519,22 +519,39 @@ nav.desktop {
 	
 	nav.tablet {
 		width:100%;
+		height:100%;
+		text-align: center;
 		ul {
 			li {
 				list-style: none;
 				text-transform: lowercase;
 				a {
 					color:#fff;
+					transition: all 200ms ease-in-out;
+					cursor: pointer;
 					text-decoration: none;
 				}
 			}
 		}
 		ul.menu {
+			> li {
+				font-size: 25px;
+				letter-spacing: 0.05em;
+				line-height: 32px;
+				margin-bottom:40px;
+				 > a {
+					 
+					 @include poppins_bold;
+				 }
+			}
 			> li.menu-item-has-children {
 					> a {
+						position: relative;
 						&:after {
 							content:"";
-							display: inline-block;
+							position: absolute;
+							top:15px;
+							right:-35px;
 							width: 0; 
 							height: 0; 
 							width: 0; 
@@ -542,17 +559,36 @@ nav.desktop {
 							border-left: 5px solid transparent;
 							border-right: 5px solid transparent;
 							border-top: 6px solid $blue;
-							vertical-align: top;
-							margin:11px 0 0 20px;
 						}
 					}
 			}
-			> li {
-				font-size: 25px;
-				letter-spacing: 0.05em;
+			> li.menu-item-has-children {
+				> a.active {
+					color:$blue;
+				}
+			}
+			> li.current-menu-item, > li.current-menu-ancestor {
 				 > a {
-					 @include poppins_bold;
+					 color:$blue;
 				 }
+			}
+		}
+		ul.sub-menu {
+			padding-top:25px;
+			li {
+				font-size: 20px;
+				line-height: 25px;
+				letter-spacing: 0.05;
+				margin-bottom:27px;
+				@include poppins_medium;
+				a {
+					
+				}
+			}
+			li.current-menu-item {
+				a {
+					color:$blue;
+				}
 			}
 		}
 	}
@@ -561,10 +597,10 @@ nav.desktop {
 	.nav_inner {
 		transform: translateX(0);
 		display: block;
+		padding-top:57px;
 	}
 	
 	.laptop_col_one {
-		height:100vh;
 		display: block;
 	}
 	

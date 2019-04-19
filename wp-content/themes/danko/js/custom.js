@@ -318,6 +318,10 @@ $("ul > li.menu-item-has-children > a[href='#']").removeAttr("href");
 
 
 
+	
+
+
+
 	function checkWidthcase() {
     
     if (windowWidth > 1510) {
@@ -345,10 +349,7 @@ $("ul > li.menu-item-has-children > a[href='#']").removeAttr("href");
 	  
 				$(this).next('ul.sub-menu').clone().appendTo('.laptop_sub_nav').fadeIn();
 				
-				
-
-				
-  
+			
 			});
 			
 			
@@ -399,6 +400,17 @@ $("ul > li.menu-item-has-children > a[href='#']").removeAttr("href");
 	    		$('.header_middle').slideToggle(300);
 	    
 	    });
+	    
+	    
+	    $('.nav_inner ul.menu > li.menu-item-has-children > a').on('click', function(e) {
+    		  
+    			$('.nav_inner ul.menu > li.menu-item-has-children > a').removeClass('active');
+    			
+    			$(this).addClass('active');
+    			
+    			
+			});
+	    
 	    
     }
 	
