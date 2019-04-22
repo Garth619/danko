@@ -58,6 +58,9 @@
 	.sec_two_reg_inner {
 		text-align: center;
 		padding-top:1px;
+		span.sec_two_content {
+			display: none;
+		}
 		.img_wrapper {
 			position: absolute;
 			top:95px;
@@ -134,6 +137,7 @@
 		line-height: 35px;
 		max-width: 330px;
 		margin:0 auto 40px;
+		display: block;
 		@include poppins_medium;
 	}
 	a.sec_two_readmore {
@@ -157,6 +161,154 @@
 }
 
 
+@media screen and (max-width: 1565px) {
+	
+	
+	
+	.sec_two_single_slide {
+		flex-basis:31%;
+		&:last-of-type {
+			display: none;
+		}
+	}
+	
+	
+} /* Media Query */
 
 
+@media screen and (max-width: 1225px) {
+	
+	.sec_two_inner {
+		padding: 87px 48px 120px;
+	}
+	
+	
+	.sec_two_slider {
+		display: block;
+		max-width:600px;
+		margin:0 auto;
+		.slick-dots {
+			bottom: -50px;
+			li.slick-active {
+				&:before {
+					opacity: 1;
+				}
+				button {
+					&:before {
+						color: $blue;
+					}
+				}
+			}
+			li:hover {
+				&:before {
+					opacity: 1;
+				}
+				button {
+					&:before {
+						color: $blue;
+					}
+				}
+			}
+			li {
+				margin:0 4px;
+				width:22px;
+				height:22px;
+				position: relative;
+				cursor: pointer;
+				&:before {
+					content:"";
+					width:22px;
+					height:22px;
+					display: block;
+					border-radius: 50%;
+					background: rgba(33px,130px,237px, 0.4);
+					position: absolute;
+					top:0;
+					left:0;
+					opacity: 0;
+					transition: all 200ms ease-in-out;
+				}
+				button {
+					width:16px;
+					position: relative;
+					top:1px;
+					left:3px;
+					&:before {
+						width:16px;
+						opacity: 1;
+						color: $blue;
+						font-size:30px;
+					}
+				}
+			}
+		}
+	}
+	
+	.sec_two_reg {
+		.sec_two_reg_inner {
+			.img_wrapper {
+				top: 64px;
+			}
+			span.sec_two_content {
+				color:#959595;
+				display: block;
+				font-size: 18px;
+				line-height: 35px;
+				max-width: 100%;
+				margin:33px auto 40px;
+				@include poppins_medium;
+			}
+			span.sec_two_amount {
+				margin-top: 181px;
+			}
+		}
+	}
+	
+	.sec_two_single_slide {
+		background: #fff;
+		height:580px;
+		padding:0 45px;
+		&:after {
+			display: none;
+		}
+		&:hover {
+			.sec_two_hover {
+				opacity: 0;
+				visibility: hidden;
+			}
+		}
+	}
+	
+	
+	
+} /* Media Query */
+
+
+
+
+@media screen and (max-width: 767px) {
+	
+	
+	
+	.sec_two_inner {
+    padding: 123px 40px 100px;
+	}
+	
+	.sec_two_single_slide {
+		height:auto;
+		padding: 0 20px;
+	}
+	
+	.sec_two_reg {
+		.sec_two_reg_inner {
+			span.sec_two_content {
+				margin: 23px auto 40px;
+			}
+		}
+	}
+	
+	
+	
+	
+} /* Media Query */
 

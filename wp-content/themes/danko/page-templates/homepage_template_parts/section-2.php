@@ -20,6 +20,8 @@
 						
 						<span class="sec_two_type">Wrongful Death</span><!-- sec_two_type -->
 						
+						<span class="sec_two_content">Our client was walking down the sidewalk on her lunch break when there was an explosion in an underground electrical vault that blew off a manhole cover and severely burned her.</span><!-- sec_two_content -->
+						
 					</div><!-- sec_two_reg_inner -->
 				
 				<div class="sec_two_hover">
@@ -51,6 +53,8 @@
 						<span class="sec_two_amount">$50m</span><!-- sec_two_amount -->
 						
 						<span class="sec_two_type">Wrongful Death</span><!-- sec_two_type -->
+						
+						<span class="sec_two_content">Our client was walking down the sidewalk on her lunch break when there was an explosion in an underground electrical vault that blew off a manhole cover and severely burned her.</span><!-- sec_two_content -->
 						
 					</div><!-- sec_two_reg_inner -->
 				
@@ -84,6 +88,8 @@
 						
 						<span class="sec_two_type">Airplane Accident</span><!-- sec_two_type -->
 						
+						<span class="sec_two_content">Our client was walking down the sidewalk on her lunch break when there was an explosion in an underground electrical vault that blew off a manhole cover and severely burned her.</span><!-- sec_two_content -->
+						
 					</div><!-- sec_two_reg_inner -->
 				
 				<div class="sec_two_hover">
@@ -115,6 +121,8 @@
 						<span class="sec_two_amount">$9.5m</span><!-- sec_two_amount -->
 						
 						<span class="sec_two_type">Pedestrian Accident</span><!-- sec_two_type -->
+						
+						<span class="sec_two_content">Our client was walking down the sidewalk on her lunch break when there was an explosion in an underground electrical vault that blew off a manhole cover and severely burned her.</span><!-- sec_two_content -->
 						
 					</div><!-- sec_two_reg_inner -->
 				
