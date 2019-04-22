@@ -5,7 +5,6 @@ header {
 	display: flex;
 	position: relative;
 	z-index: 5;
-	//background: pink;
 }
 
 
@@ -296,6 +295,7 @@ nav.desktop {
 		display: block;
 		height:100%;
 		background: top left repeat;
+		
 		padding:57px 63px;
 		transform: translateX(100%);
 		transition: all 900ms cubic-bezier(.17,.66,.34,.98);

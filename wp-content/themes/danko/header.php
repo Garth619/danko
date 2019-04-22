@@ -81,7 +81,7 @@
 				
 				</div><!-- nav_inner -->
 				
-				<div class="laptop_form" style="background:url(<?php bloginfo('template_directory');?>/images/pattern.jpg)">
+				<div class="laptop_form" style="background:url(<?php bloginfo('template_directory');?>/images/pattern.jpg);background-size: 78px 39px;">
 					
 					<div class="laptop_form_inner">
 					

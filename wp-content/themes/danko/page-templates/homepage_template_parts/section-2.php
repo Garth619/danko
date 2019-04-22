@@ -1,4 +1,4 @@
-<section id="section_two">
+<section id="section_two" style="background:url(<?php bloginfo('template_directory');?>/images/pattern.jpg);background-size:78px 39px;">
 	
 	<div class="sec_two_inner">
 		
