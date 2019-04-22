@@ -72,8 +72,23 @@
 	
 	<div class="sec_four_right" style="background:url(<?php bloginfo('template_directory');?>/images/pattern.jpg);background-size: 78px 39px;">
 		
-		<img src="<?php bloginfo('template_directory');?>/images/news-img.jpg"/>
-		
+			<picture>
+				
+				<source type="image/jpg" media="(max-width: 1530px)" srcset="<?php bloginfo('template_directory');?>/images/news-img-1400.jpg">
+						
+				<img src="<?php bloginfo('template_directory');?>/images/news-img.jpg"/>
+			
+			</picture>
+
+	
 	</div><!-- sec_four_right -->
+	
+	
+	<div class="d_m_slide dm_sec_four">
+		
+		<span>D</span>
+		<span>M</span>
+	
+	</div><!-- d_m_slide -->
 	
 </section><!-- section_four -->

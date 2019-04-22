@@ -140,9 +140,6 @@
 				
 			</div><!-- sec_two_single_slide -->
 			
-		
-			
-					
 		</div><!-- sec_two_slider -->
 		
 	</div><!-- sec_two_inner -->

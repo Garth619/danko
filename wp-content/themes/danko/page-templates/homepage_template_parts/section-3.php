@@ -1,6 +1,6 @@
 <section id="section_three">
 	
-	<div class="d_m_slide">
+	<div class="d_m_slide dm_sec_three">
 		
 		<span>D</span>
 		<span>M</span>

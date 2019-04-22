@@ -255,7 +255,7 @@
 		"oAP": "/images/news-img-1400.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/images/news-img.jpg": {
@@ -536,6 +536,14 @@
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/page-templates/homepage_template_parts/section-4.php",
+		"oF": 0
+		},
+	"/page-templates/homepage_template_parts/section-5.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/page-templates/homepage_template_parts/section-5.php",
 		"oF": 0
 		},
 	"/page-templates/template-about.php": {
@@ -880,6 +888,19 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/scss/_variables.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"/scss/homepage/_section_five.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/scss/homepage/_section_five.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
