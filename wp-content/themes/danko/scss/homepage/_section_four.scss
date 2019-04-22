@@ -13,6 +13,7 @@
 
 .sec_four_left {
 	background: $black;
+	position: relative;
 }
 
 .sec_four_left_inner {
@@ -46,6 +47,15 @@
 
 
 .news_row {
+	&:hover {
+		a {
+			.news_post {
+				span.news_readmore {
+					color:$gold;
+				}
+			}
+		}
+	}
 	&:first-of-type {
 		margin-bottom:127px;
 	}
@@ -88,6 +98,7 @@
 				margin-top:28px;
 				letter-spacing: 0.25em;
 				text-decoration: underline;
+				transition: all 200ms ease-in-out;
 				@include poppins_extrabold;
 			}
 		}
@@ -104,5 +115,24 @@
 		max-width:100%;
 		height:auto;
 		display: block;
+	}
+}
+
+
+a.news_view_more {
+	position: absolute;
+	bottom:0;
+	right:0;
+	background:$blue;
+	color:#fff;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-size:14px;
+	padding:32px 65px;
+	letter-spacing: 0.3em;
+	transition: all 200ms ease-in-out;
+	@include poppins_extrabold;
+	&:hover {
+		background: $gold;
 	}
 }

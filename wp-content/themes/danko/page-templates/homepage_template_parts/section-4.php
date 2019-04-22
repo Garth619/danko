@@ -66,6 +66,8 @@
 			
 		</div><!-- sec_four_left_inner -->
 		
+		<a class="news_view_more" href="">View More</a><!-- news_view_more -->
+		
 	</div><!-- sec_four_left -->
 	
 	<div class="sec_four_right" style="background:url(<?php bloginfo('template_directory');?>/images/pattern.jpg);background-size: 78px 39px;">
