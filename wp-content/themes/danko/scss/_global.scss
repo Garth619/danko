@@ -99,6 +99,23 @@ h1,h2,h3,h4 {
 	}
 }
 
+
+
+@media screen and (max-width: 1250px) {
+	
+	
+	
+	.content {
+		blockquote {
+			font-size: 45px;
+			line-height: 55px;
+		}
+	}
+	
+	
+	
+} /* Media Query */
+
 @media screen and (max-width: 767px) {
 	
 	
@@ -114,7 +131,22 @@ img.aligncenter {
 	height:auto;
 }
 	
-	
+	.content {
+		h2 {
+			font-size: 25px;
+			line-height: 38px;
+		}
+		blockquote {
+			font-size: 40px;
+			line-height: 45px;
+			&:before {
+				margin-bottom: 49px;
+			}
+			&:after {
+				margin-top:57px;
+			}
+		}
+	}
 	
 	
 } /* Media Query */

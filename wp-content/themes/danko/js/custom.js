@@ -232,7 +232,8 @@ jQuery(document).ready(function($){
 
     createWaypoint('section_one', 'header', 'visible', 89, null, true);
     createWaypoint('section_one', '#section_one', 'visible', 89, null, true);
-    //createWaypoint('section_one', '#section_one', 'visible', 89, null, true);
+    createWaypoint('section_three', '.d_m_slide', 'visible', '40%', null, true);
+    createWaypoint('section_four', '.d_m_slide', 'hide', '70%', null, true);
     
    
 
