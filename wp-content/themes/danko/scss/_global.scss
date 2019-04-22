@@ -49,6 +49,56 @@ h1,h2,h3,h4 {
     opacity: 1; }
 
 
+
+.content {
+	font-size: 18px;
+	line-height: 35px;
+	letter-spacing: 0.01em;
+	color:$greytext;
+	@include poppins_medium;
+	h2 {
+		font-size: 28px;
+		line-height: 45px;
+		color:$bluedark;
+		margin-bottom:45px;
+		@include poppins_bold;
+	}
+	p {
+		margin-bottom:42px;
+	}
+	a {
+		color:$blue;
+		transition: all 200ms ease-in-out;
+		&:hover {
+			color:$gold;
+		}
+	}
+	blockquote {
+		color:$gold;
+		margin:0 auto;
+		max-width: 972px;
+		font-size: 60px;
+		line-height: 70px;
+		text-align: center;
+		@include questa_medium_italic;
+		&:before, &:after {
+			content:"";
+			display: block;
+			width:100%;
+			height:2px;
+			background: $gold;
+			max-width:209px;
+			margin:0 auto;
+		}
+		&:before {
+			margin-bottom: 55px;
+		}
+		&:after {
+			margin-top:55px;
+		}
+	}
+}
+
 @media screen and (max-width: 767px) {
 	
 	

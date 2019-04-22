@@ -38,20 +38,20 @@
 				
 				<div class="play_button_wrapper"></div><!-- play_button_wrapper -->
 				
-				<span class="sec_one_title">We discover <strong>the truth.</strong></span><!-- sec_one_title -->
+					<span class="sec_one_title">We discover <strong>the truth.</strong></span><!-- sec_one_title -->
 				
-				<span class="goldline"></span><!-- goldline -->
+					<span class="goldline"></span><!-- goldline -->
 				
-				<ul>
-					<li>20 years experience</li>
-					<li>Record results</li>
-				</ul>
+					<ul>
+						<li>20 years experience</li>
+						<li>Record results</li>
+					</ul>
 				
-				<a class="free_consult_button" href="">Schedule Free Consultation</a><!-- free_consult_button -->
+					<a class="free_consult_button" href="">Schedule Free Consultation</a><!-- free_consult_button -->
 				
-			</div><!-- sec_one_inner -->
+				</div><!-- sec_one_inner -->
 			
-		</div><!-- sec_one_right -->
+			</div><!-- sec_one_right -->
 
-</section><!-- section_one -->
+	</section><!-- section_one -->
 
