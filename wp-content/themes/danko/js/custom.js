@@ -241,6 +241,11 @@ jQuery(document).ready(function($){
     createWaypoint('section_four', '.dm_sec_four', 'visible', '40%', null, true);
     createWaypoint('section_five', '.dm_sec_four', 'hide', '80%', null, true);
     
+    
+    
+    createWaypoint('section_five', '.dm_sec_five', 'visible', '40%', null, true);
+    createWaypoint('footer_trigger', '.dm_sec_five', 'hide', '80%', null, true);
+    
    
 
 
@@ -288,6 +293,26 @@ $('.sec_two_slider').slick({
 	responsive: [
     {
       breakpoint: 1225,
+      settings: "unslick",
+   }
+	]
+ });
+ 
+ 
+ 
+ 
+ $('.news_feed').slick({
+  infinite: true,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  fade:true,
+  adaptiveHeight: true,
+	arrows:false,
+	mobileFirst:true,
+	dots:true,
+	responsive: [
+    {
+      breakpoint: 767,
       settings: "unslick",
    }
 	]
