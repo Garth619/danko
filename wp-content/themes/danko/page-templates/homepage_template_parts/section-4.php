@@ -64,9 +64,9 @@
 				
 			</div><!-- news_feed -->
 			
+			<a class="news_view_more" href="">View More</a><!-- news_view_more -->
+			
 		</div><!-- sec_four_left_inner -->
-		
-		<a class="news_view_more" href="">View More</a><!-- news_view_more -->
 		
 	</div><!-- sec_four_left -->
 	
