@@ -102,3 +102,32 @@
 	}
 	
 } /* Media Query */
+
+
+@media screen and (max-width: 767px) {
+	
+	
+	#section_five {
+		padding-left:40px;
+		padding-right:40px;
+	}
+	
+	.sec_five_inner {
+		padding: 87px 0px 27px;
+		blockquote {
+			margin-bottom: 57px;
+		}
+	}
+	
+	
+.sec_five_img {
+	display: none;
+}
+
+.sec_five_bottom, .sec_five_bottom_content {
+	padding-top:0;
+}
+	
+	
+	
+} /* Media Query */
