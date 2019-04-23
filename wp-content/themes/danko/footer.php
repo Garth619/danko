@@ -16,7 +16,7 @@
 			
 			<div class="footer_col_one footer_col">
 				
-				<a class="" href="<?php bloginfo('template_directory');?>">
+				<a class="" href="<?php bloginfo('url');?>">
 					
 					<img src="<?php bloginfo('template_directory');?>/images/logo-footer.svg"/>
 					
@@ -34,7 +34,28 @@
 				
 			</div><!-- footer_col_two -->
 			
-			<div class="footer_col_three footer_col"></div><!-- footer_col_three -->
+			<div class="footer_col_three footer_col">
+				
+				<ul>
+					<li><a class="" href="">Aviation Blog</a></li>
+					<li><a class="" href="">Personal Injury Blog</a></li>
+					<li><a class="" href="">Privacy Policy</a></li>
+					<li><a class="" href="">Disclaimer</a></li>
+				</ul>
+				
+				<div class="copyright_wrapper">
+					
+					<span class="copyright">&copy;<?php echo date("Y"); ?> danko meredith. All rights reserved</span>
+					
+					<a class="" href="//ilawyermarketing.com" target="_blank" rel="noopener">
+						
+						<img src="<?php bloginfo('template_directory');?>/images/ilawyer.svg"/>
+						
+					</a>
+					
+				</div><!-- copyright_wrapper -->
+				
+			</div><!-- footer_col_three -->
 			
 		</div><!-- footer_location_inner -->
 		
