@@ -31,7 +31,7 @@
 			
 			<div class="footer_col_two footer_col">
 				
-				<span class="address">333 Twin Dolphin Dr #145<br/> Redwood Shores, CA 94065</span><!-- address -->
+				<span class="address">333 Twin Dolphin Dr #145 Redwood Shores, CA 94065</span><!-- address -->
 
 				<a class="footer_tel" href="tel:6504533600">(650) 453-3600</a><!-- footer_tel -->
 				
