@@ -47,7 +47,7 @@
 						<li>Record results</li>
 					</ul>
 				
-					<a class="free_consult_button" href="">Schedule Free Consultation</a><!-- free_consult_button -->
+					<a class="free_consult_button" href="#free_consultation">Schedule Free Consultation</a><!-- free_consult_button -->
 				
 				</div><!-- sec_one_inner -->
 			

@@ -1,7 +1,7 @@
 <footer id="footer_trigger" style="background:url(<?php bloginfo('template_directory');?>/images/pattern.jpg);background-size:78px 39px;">
 	
 	
-	<div class="footer_form_wrapper">
+	<div id="free_consultation" class="footer_form_wrapper">
 	
 		<div class="footer_form_inner">
 		
