@@ -1,0 +1,80 @@
+.inner_banner {
+	position: relative;
+	height:455px;
+	width:100%;
+	img {
+		position: absolute;
+		top:0;
+		left:0;
+		width:100%;
+		height:100%;
+		object-fit:cover;
+		object-position:90% 0;
+	}
+}
+
+
+.banner_content {
+	position: relative;
+	z-index: 1;
+	text-align: center;
+	padding:152px 0 0;
+	span, h1.banner_header {
+		color:#fff;
+		display: block;
+		font-size:100px;
+		margin-bottom:25px;
+		@include questa_medium;
+	}
+	a.banner_button {
+		background: $blue;
+		color:#fff;
+		display: inline-block;
+		text-decoration: none;
+		font-size: 30px;
+		letter-spacing: 0.025em;
+		padding:27px 40px;
+		transition: all 200ms ease-in-out;
+		@include questa_medium_italic;
+		&:hover {
+			background: $gold;
+		}
+	}
+}
+
+.outer_container {
+	padding-bottom:125px;
+}
+
+.two_col {
+	width:100%;
+	max-width:1510px;
+	margin:0 auto;
+	display: flex;
+}
+
+
+.sidebar_wrapper {
+	flex-basis:325px;
+	flex-shrink:0;
+	padding-top:137px;
+}
+
+.sidebar_box {
+	span.sidebar_title {
+		color:$blue;
+		display: block;
+		text-transform: uppercase;
+		font-size: 16px;
+		letter-spacing: 0.3em;
+		padding-bottom:19px;
+		border-bottom:3px solid $gold;
+		@include poppins_extrabold;
+	}
+}
+
+
+.content_wrapper {
+	flex-grow:1;
+	padding:112px 0 0 10%;
+}
