@@ -52,7 +52,7 @@
 						
 						<span class="sec_two_amount">$50m</span><!-- sec_two_amount -->
 						
-						<span class="sec_two_type">Wrongful Death</span><!-- sec_two_type -->
+						<span class="sec_two_type">Gas Pipe Explosion</span><!-- sec_two_type -->
 						
 						<span class="sec_two_content">Our client was walking down the sidewalk on her lunch break when there was an explosion in an underground electrical vault that blew off a manhole cover and severely burned her.</span><!-- sec_two_content -->
 						

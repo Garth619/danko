@@ -187,6 +187,21 @@ body:not(.page-template-template-home) {
 	
 } /* Media Query */
 
+
+@media screen and (max-width: 1066px) {
+	
+	
+	
+	.content {
+		h1 {
+			font-size:75px;
+			line-height: 75px;
+		}
+	}
+	
+	
+} /* Media Query */
+
 @media screen and (max-width: 767px) {
 	
 	
@@ -203,9 +218,17 @@ img.aligncenter {
 }
 	
 	.content {
+		h1 {
+			font-size: 60px;
+			line-height: 60px;
+			padding-bottom: 45px;
+		}
 		h2 {
 			font-size: 25px;
 			line-height: 38px;
+		}
+		h3, h4 {
+			padding-top:0;
 		}
 		blockquote {
 			font-size: 40px;

@@ -246,8 +246,11 @@ jQuery(document).ready(function($){
     createWaypoint('section_five', '.dm_sec_five', 'visible', '40%', null, true);
     createWaypoint('footer_trigger', '.dm_sec_five', 'hide', '80%', null, true);
     
+    
+    createWaypoint('outer_trigger', '.dm_internal', 'visible', '40%', null, true);
+    createWaypoint('footer_trigger', '.dm_internal', 'hide', '80%', null, true);
    
-
+		
 
 		
 		/* Live Chat - Call function when script needs to be loaded either by hover, click or waypoints
