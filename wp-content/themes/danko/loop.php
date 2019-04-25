@@ -16,23 +16,45 @@
 <?php endif; ?>
 
 
-<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+<?php if ( have_posts() ) :?> 
 
+	<div class="blog_feed">
+
+<?php while ( have_posts() ) : the_post(); ?>
+
+	<div class="blog_post">
+		
+		<h2 class="h2_blog">
+		
+			<a href="<?php the_permalink();?>"><?php the_title();?></a>
 	
+		</h2><!-- h2_blog -->
 		
-	<h2><a href="<?php the_permalink();?>"><?php the_title();?></a></h2>
+		<div class="blog_meta">
 		
-	<?php $pfx_date = get_the_date(); echo $pfx_date ?>
+			<span class="date"><?php $pfx_date = get_the_date(); echo $pfx_date ?></span>
 			
-	<?php echo get_the_category_list();?>
+			Posted In
 			
-	<?php echo wp_trim_words( get_the_content(), 54, '...' );?>
+			<?php echo get_the_category_list();?>
+		
+		</div><!-- blog_meta -->
+		
+		<div class="blog_content">
 			
-	<?php edit_post_link( __( 'Edit'), '', '' ); ?>
+			<?php echo wp_trim_words( get_the_content(), 54, '...' );?>
+			
+			<?php edit_post_link( __( 'Edit'), '', '' ); ?>
+		
+		</div><!-- blog_content -->
+		
+		<a class="blog_readmore" href="<?php the_permalink();?>">Read More</a><!-- blog_readmore -->
 
-			
+	</div><!-- blog_post -->
 		
 <?php endwhile; // end of loop ?>
+
+	</div><!-- blog_feed -->
 
 <?php endif; ?>
 
