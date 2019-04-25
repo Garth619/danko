@@ -226,16 +226,40 @@
 	
 		
 	
+	
 } /* Media Query */
 
 
 
 @media screen and (max-width: 1066px) {
 	
+	body.page-template-default {
+		.inner_banner {
+			display: none;
+		}
+	}
 	
 	
 	.inner_banner {
-		display: none;
+		height:auto;
+		padding-left:98px;
+		padding-right:98px;
+		img {
+			display: none;
+		}
+	}
+	
+	
+	.banner_content {
+		padding:50px 0 0;
+		h1.banner_header {
+			color:$blue;
+			font-size: 75px;
+			line-height: 75px;
+		}
+		a.banner_button {
+			display: none;
+		}
 	}
 	
 	.outer_container {
@@ -255,6 +279,9 @@
 	}
 	
 	
+	
+	
+	
 } /* Media Query */
 
 
@@ -264,6 +291,21 @@
 	
 	#internal_main {
     margin-top: 0;
+	}
+	
+	.inner_banner {
+		padding-left:40px;
+		padding-right:40px;
+	}
+	
+	
+	.banner_content {
+		padding:50px 0 0;
+		h1.banner_header {
+			font-size: 60px;
+			line-height: 60px;
+			text-align: left;
+		}
 	}
 	
 	.outer_container {
