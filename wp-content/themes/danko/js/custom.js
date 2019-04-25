@@ -449,15 +449,22 @@ checkWidthcase();
 
 
 
-
-
-
-
-
-
 // current page clone
 
 $('nav ul.menu > li.current-menu-ancestor > a').next('ul.sub-menu').clone().appendTo('.nav_clone').show();
+
+
+
+// sidebar slideToggle
+
+
+$('.sidebar_box ul.menu > li.menu-item-has-children > a').on('click', function(e) {
+  
+  $(this).next('ul.sub-menu').slideToggle(200);
+  
+  $(this).toggleClass('active');
+  
+});
 
 
 

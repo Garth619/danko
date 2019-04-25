@@ -61,6 +61,7 @@
 }
 
 .sidebar_box {
+	margin-bottom:54px;
 	span.sidebar_title {
 		color:$blue;
 		display: block;
@@ -69,7 +70,75 @@
 		letter-spacing: 0.3em;
 		padding-bottom:19px;
 		border-bottom:3px solid $gold;
+		//margin-bottom:5px;
 		@include poppins_extrabold;
+	}
+	ul {
+		list-style: none;
+		padding-top:23px;
+		li {
+			font-size: 16px;
+			letter-spacing: 0.05em;
+			line-height: 25px;
+			padding-bottom:23px;
+			@include poppins_bold;
+			a {
+				color:$black;
+				text-decoration: none;
+				transition: all 200ms ease-in-out;
+				cursor: pointer;
+				&:hover {
+					color:$blue;
+				}
+			}
+		}
+	}
+	ul.menu {
+		> li.current-menu-ancestor {
+			 > a {
+				 color:$blue;
+			 }
+			 ul.sub-menu {
+				 display: block;
+			 }
+		}
+		> li {
+			> a.active {
+				color:$blue;
+			}
+		}
+		> li.menu-item-has-children {
+			 > a {
+				 position: relative;
+				 display: block;
+				 &:after {
+					 content:"";
+					 position:absolute;
+					 top:9px;
+					 right:10px;
+					 display: block;
+					 width: 0; 
+					 height: 0; 
+				 	 border-left: 6px solid transparent;
+				 	 border-right: 6px solid transparent;
+				 	 border-top: 6px solid $blue;
+				 }
+			}
+		}
+	}
+	ul.sub-menu {
+		display: none;
+		li.current-menu-item {
+			a {
+				color: $blue;
+			}
+		}
+		li {
+			&:last-of-type {
+				padding-bottom: 0;
+			}
+			@include poppins_medium;
+		}
 	}
 }
 

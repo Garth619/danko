@@ -19,6 +19,23 @@
 		
 	</div><!-- sidebar_box -->
 	
+	
+	<div class="sidebar_box">
+		
+		<span class="sidebar_title">Related Articles</span><!-- sidebar_title -->
+		
+		
+		<ul>
+			<li><a href="">Recent story  that takes up two lines</a></li>
+			<li><a href="">Recent story  that takes up two lines</a></li>
+			<li><a href="">Recent story  that takes up two lines</a></li>
+			<li><a href="">Recent story  that takes up two lines</a></li>
+		</ul>
+
+		
+	</div><!-- sidebar_box -->
+	
+	
 </div><!-- sidebar_wrapper -->
 
 
