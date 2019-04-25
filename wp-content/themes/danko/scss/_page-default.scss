@@ -256,6 +256,7 @@
 			color:$blue;
 			font-size: 75px;
 			line-height: 75px;
+			text-align: left;
 		}
 		a.banner_button {
 			display: none;
@@ -293,6 +294,10 @@
     margin-top: 0;
 	}
 	
+	#internal_main.visible {
+		margin-top:89px;
+	}
+	
 	.inner_banner {
 		padding-left:40px;
 		padding-right:40px;
@@ -304,7 +309,6 @@
 		h1.banner_header {
 			font-size: 60px;
 			line-height: 60px;
-			text-align: left;
 		}
 	}
 	
@@ -319,6 +323,10 @@
 	
 	.sidebar_box {
 		margin-bottom: 42px;
+	}
+	
+	.content_wrapper {
+		padding-top:20px;
 	}
 	
 	

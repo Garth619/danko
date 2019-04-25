@@ -249,6 +249,12 @@ jQuery(document).ready(function($){
     
     createWaypoint('outer_trigger', '.dm_internal', 'visible', '40%', null, true);
     createWaypoint('footer_trigger', '.dm_internal', 'hide', '80%', null, true);
+    
+    
+    createWaypoint('internal_main', 'header', 'visible', 89, null, true);
+    createWaypoint('internal_main', '#internal_main', 'visible', 89, null, true);
+    
+    
    
 		
 
@@ -468,6 +474,22 @@ $('.sidebar_box ul.menu > li.menu-item-has-children > a').on('click', function(e
   $(this).toggleClass('active');
   
 });
+
+
+// sidebar current page
+
+
+/*
+	var pgurl = window.location.href;
+	
+	$(".sidebar_box ul.case_studies_list li").each(function(){
+  
+  if($(this).find('a').attr("href") == pgurl)
+    
+    $(this).addClass("active");
+	
+	})
+*/
 
 
 

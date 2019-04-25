@@ -37,7 +37,7 @@
 
 .blog_meta {
 	font-size:15px;
-	line-height: 19px;
+	line-height: 21px;
 	text-transform: uppercase;
 	color:$bluedark;
 	letter-spacing: 0.2em;
@@ -150,3 +150,54 @@ a.blog_readmore {
 }
 
 
+
+
+		h1.single_blog_header {
+			font-size: 65px;
+			line-height: 70px;
+		}
+	
+
+
+
+@media screen and (max-width: 1250px) {
+	
+	
+	
+.navigation {
+	margin-top: 30px;
+}	
+	
+.blog_post {
+	&:last-of-type {
+		border-bottom:4px solid #e1e1e1;
+		padding-bottom:63px;
+	}
+}
+	
+	
+	
+} /* Media Query */
+
+
+@media screen and (max-width: 767px) {
+	
+	
+	
+.blog_post {
+	margin-bottom:45px;
+	h2.h2_blog {
+		a {
+			font-size:35px;
+			line-height: 40px;
+		}
+	}
+}
+
+.navigation {
+	margin-bottom:35px;
+}
+	
+	
+	
+} /* Media Query */

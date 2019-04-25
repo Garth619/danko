@@ -5,6 +5,14 @@ header {
 	display: flex;
 	position: relative;
 	z-index: 5;
+	//box-shadow: 2.12px 3.392px 25.92px 1.08px rgba(0, 0, 0, 0.19);
+}
+
+
+body:not(.page-template-template-home) {
+	header {
+		//box-shadow: 2.12px 3.392px 25.92px 1.08px rgba(0, 0, 0, 0.19);
+	}
 }
 
 
@@ -180,7 +188,7 @@ nav.desktop {
 		position: fixed;
 		top:0;
 		left:0;
-		border-bottom:1px solid $grey;
+		//box-shadow: 2.12px 3.392px 25.92px 1.08px rgba(0, 0, 0, 0.19);
 	}
 	
 	
@@ -193,7 +201,7 @@ nav.desktop {
 		padding:0;
 		opacity: 0;
 		visibility: hidden;
-			}
+	}
 	
 	nav.laptop {
 		display: flex;
@@ -663,7 +671,11 @@ nav.desktop {
 		flex-wrap:wrap;
 		position: relative;
 		height:auto;
+		box-shadow:none;
 	}
+	
+	
+
 	
 	
 	header.visible {
@@ -676,6 +688,7 @@ nav.desktop {
 			width:100%;
 			top:0;
 			left:0;
+			
 		}
 	}
 	
