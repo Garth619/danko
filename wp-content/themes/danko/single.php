@@ -15,7 +15,7 @@
 		
 		<div class="container two_col">
 			
-			<?php get_sidebar('blog'); ?>
+			<?php get_sidebar('singlepost'); ?>
 			
 			<div class="content_wrapper content">
 				

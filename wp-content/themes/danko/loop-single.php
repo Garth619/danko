@@ -20,7 +20,6 @@
 		
 		</div><!-- blog_content -->
 
-	<?php edit_post_link( __( 'Edit'), '', '' ); ?>
 
 <?php endwhile; // end of loop ?>
 

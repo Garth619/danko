@@ -168,6 +168,27 @@ body:not(.page-template-template-home) {
 			margin-top:55px;
 		}
 	}
+	.wp-block-image {
+		figcaption {
+			color:$black;
+			text-align: left;
+			font-size: 18px;
+			line-height: 38px;
+			letter-spacing: 0.01em;
+			margin-bottom:75px;
+			@include poppins_bold;
+			&:before {
+				content:"";
+				display: inline-block;
+				width:3px;
+				vertical-align: top;
+				height: 16px;
+				margin-top:10px;
+				margin-right:8px;
+				background: $gold;
+			}
+		}
+	}
 }
 
 
@@ -240,7 +261,15 @@ img.aligncenter {
 				margin-top:57px;
 			}
 		}
+		.wp-block-image {
+			figcaption {
+				margin-bottom: 35px;
+			}
+		}
 	}
+	
+	
+
 	
 	
 } /* Media Query */
