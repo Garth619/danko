@@ -102,7 +102,7 @@ nav.desktop {
 	}
 	ul.sub-menu {
 		position: absolute;
-		top:37px;
+		top:39px;
 		left:0;
 		background: #fff;
 		padding:35px 32px;
@@ -163,6 +163,58 @@ nav.desktop {
 	display: none;
 }
 
+
+.internal_free_consultation {
+	flex-basis:365px;
+	display: none;
+	a {
+		display: block;
+		padding-top:35px;
+		width:100%;
+		height:100%;
+		background: $blue;
+		color:#fff;
+		text-align: center;
+		font-size: 30px;
+		text-decoration: none;
+		text-transform: lowercase;
+		transition: all 200ms ease-in-out;
+		@include questa_medium_italic;
+		&:hover {
+			background: $gold;
+		}
+	}
+}
+
+
+body.single {
+	.internal_free_consultation {
+		display: block;
+	}
+}
+
+@media screen and (max-width: 1870px) {
+	
+	
+.internal_free_consultation {
+	flex-basis: 340px;
+}
+
+	
+} /* Media Query */
+
+
+@media screen and (max-width:1840px) {
+	
+	
+	.internal_free_consultation {
+		display: none;
+	}
+
+	
+	
+	
+} /* Media Query */
 
 
 @media screen and (min-width: 1510px) {

@@ -124,8 +124,14 @@
 			<div class="menu_close"></div><!-- menu_close -->
 			
 		</div><!-- menu_wrapper -->
-			
+		
 		</div><!-- header_right -->
+		
+		<div class="internal_free_consultation">
+			
+			<a href="#free_consultation">Free Consultation Here</a>
+			
+		</div><!-- internal_free_consultation -->
 		
 	</header>
 				
