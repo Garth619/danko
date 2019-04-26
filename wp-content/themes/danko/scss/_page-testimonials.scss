@@ -17,7 +17,6 @@
 		max-width:910px;
 		margin:0 auto;
 		img {
-			width:160px;
 			height:87px;
 			width:160px;
 			margin:0 auto;
@@ -55,3 +54,31 @@
 		}
 	}
 }
+
+
+@media screen and (max-width: 1066px) {
+	
+	    
+	.testimonial_wrapper {
+		margin: 80px auto 0;
+	}
+	
+	.single_testimonial {
+		padding-bottom: 65px;
+		margin-bottom: 65px;
+		&:last-of-type {
+			margin-bottom:40px;
+		}
+		.single_testimonial_inner {
+			img {
+				width:130px;
+				height:71px;
+			}
+			span.testimonial_title {
+				font-size: 37px;
+				line-height: 42px;
+			}
+		}
+	}
+	
+} /* Media Query */
