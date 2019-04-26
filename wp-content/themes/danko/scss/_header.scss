@@ -206,9 +206,10 @@ body.single {
 
 @media screen and (max-width:1840px) {
 	
-	
+	body.single {
 	.internal_free_consultation {
 		display: none;
+	}
 	}
 
 	
@@ -578,6 +579,10 @@ body.single {
 	.laptop_form.open.close {
 		transform: translateX(100%);
 	}
+	
+	
+	
+	
 	
 	
 } /* Media Query */
