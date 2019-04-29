@@ -94,7 +94,7 @@ get_header(); ?>
 							
 						</div><!-- myvideo -->
 						
-						<span class="single_video_name">Video Title here : lorem ispum/span><!-- single_video_name -->
+						<span class="single_video_name">Video Title here : lorem ispum</span><!-- single_video_name -->
 					
 					</div><!-- single_video -->
 					
@@ -229,7 +229,7 @@ get_header(); ?>
 							
 						</div><!-- myvideo -->
 						
-						<span class="single_video_name">Video Title here : lorem ispum/span><!-- single_video_name -->
+						<span class="single_video_name">Video Title here : lorem ispum</span><!-- single_video_name -->
 					
 					</div><!-- single_video -->
 					

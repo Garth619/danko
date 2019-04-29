@@ -769,6 +769,8 @@ body.single {
 		background:$grey;
 		padding:0 20px;
 		height:108px;
+		position: relative;
+    z-index: 1;
 		a.logo {
 			margin:0 auto;
 			img {
@@ -785,6 +787,7 @@ body.single {
 		flex-grow:1;
 		background: #fff;
 		text-align: left;
+		box-shadow: 2.12px 3.392px 25.92px 1.08px rgba(0, 0, 0, 0.19);
 		.header_right_inner {
 			flex-grow: 1;
 			padding-top:19px;

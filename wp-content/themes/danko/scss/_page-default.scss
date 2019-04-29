@@ -251,12 +251,13 @@
 	
 	
 	.banner_content {
-		padding:50px 0 0;
+		padding:62px 0 0;
 		h1.banner_header {
 			color:$blue;
 			font-size: 65px;
 			line-height: 65px;
 			text-align: left;
+			@include questa_regular;
 		}
 		h1.center {
 			text-align: center;
@@ -273,7 +274,7 @@
 	
 	
 	.content_wrapper {
-		padding-top: 40px;
+		padding-top: 62px;
 	}
 	
 	

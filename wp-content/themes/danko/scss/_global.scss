@@ -179,15 +179,16 @@ body:not(.page-template-template-home) {
 			line-height: 38px;
 			letter-spacing: 0.01em;
 			margin-bottom:75px;
+			position: relative;
+			padding-left:12px;
 			@include poppins_bold;
 			&:before {
 				content:"";
-				display: inline-block;
 				width:3px;
-				vertical-align: top;
 				height: 16px;
-				margin-top:10px;
-				margin-right:8px;
+				top:10px;
+				left:0;
+				position: absolute;
 				background: $gold;
 			}
 		}
@@ -218,8 +219,8 @@ body:not(.page-template-template-home) {
 	
 	.content {
 		h1 {
-			font-size:75px;
-			line-height: 75px;
+			font-size: 65px;
+			line-height: 65px;
 		}
 	}
 	
