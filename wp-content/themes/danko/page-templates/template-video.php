@@ -20,278 +20,49 @@ get_header(); ?>
 			
 			<h1 class="center"><?php the_title();?></h1>
 			
-			<div class="video_inner">
+			<?php if(get_field('video_center')): ?>
+			
+				<div class="video_inner">
+			 
+				<?php while(has_sub_field('video_center')): ?>
 				
-				<span class="video_category_title">News Clips</span><!-- video_category_title -->
+					<span class="video_category_title">News Clips</span><!-- video_category_title -->
+			 
+					<?php if(get_sub_field('single_video')): ?>
+					
+						<div class="video_category">
+					 
+						<?php while(has_sub_field('single_video')): ?>
+					 
+							<div class="single_video">
+					
+								<div class="myvideo">
+							
+									<div class="video_overlay">
+								
+										<div class="play_button_wrapper"></div><!-- play_button_wrapper -->
+								
+									</div><!-- video_overlay -->
+							
+									<div class="video_page_wistia wistia_embed wistia_async_waichudc62 popover=true popoverContent=thumbnail"></div><!-- video_page_wistia -->
+							
+								</div><!-- myvideo -->
+						
+								<span class="single_video_name">Firm Overview</span><!-- single_video_name -->
+					
+							</div><!-- single_video -->
+					    
+						<?php endwhile; ?>
+						
+						</div><!-- video_category -->
+					 
+					<?php endif; ?>
+					
+				<?php endwhile; ?>
 				
-				<div class="video_category">
-					
-					<div class="single_video">
-					
-						<div class="myvideo">
-							
-							<div class="video_overlay">
-								
-								<div class="play_button_wrapper"></div><!-- play_button_wrapper -->
-								
-							</div><!-- video_overlay -->
-							
-							<div class="video_page_wistia wistia_embed wistia_async_waichudc62 popover=true popoverContent=thumbnail"></div><!-- video_page_wistia -->
-							
-						</div><!-- myvideo -->
-						
-						<span class="single_video_name">Firm Overview</span><!-- single_video_name -->
-					
-					</div><!-- single_video -->
-					
-					<div class="single_video">
-					
-						<div class="myvideo">
-							
-							<div class="video_overlay">
-								
-								<div class="play_button_wrapper"></div><!-- play_button_wrapper -->
-								
-							</div><!-- video_overlay -->
-							
-							<div class="video_page_wistia wistia_embed wistia_async_waichudc62 popover=true popoverContent=thumbnail"></div><!-- video_page_wistia -->
-							
-						</div><!-- myvideo -->
-						
-						<span class="single_video_name">Video Title here : lorem ispum</span><!-- single_video_name -->
-					
-					</div><!-- single_video -->
-					
-					<div class="single_video">
-					
-						<div class="myvideo">
-							
-							<div class="video_overlay">
-								
-								<div class="play_button_wrapper"></div><!-- play_button_wrapper -->
-								
-							</div><!-- video_overlay -->
-							
-							<div class="video_page_wistia wistia_embed wistia_async_waichudc62 popover=true popoverContent=thumbnail"></div><!-- video_page_wistia -->
-							
-						</div><!-- myvideo -->
-						
-						<span class="single_video_name">Video Title here lorem ispum dolor frugiat nunc.</span><!-- single_video_name -->
-					
-					</div><!-- single_video -->
-					
-					<div class="single_video">
-					
-						<div class="myvideo">
-							
-							<div class="video_overlay">
-								
-								<div class="play_button_wrapper"></div><!-- play_button_wrapper -->
-								
-							</div><!-- video_overlay -->
-							
-							<div class="video_page_wistia wistia_embed wistia_async_waichudc62 popover=true popoverContent=thumbnail"></div><!-- video_page_wistia -->
-							
-						</div><!-- myvideo -->
-						
-						<span class="single_video_name">Video Title here : lorem ispum</span><!-- single_video_name -->
-					
-					</div><!-- single_video -->
-					
-					<div class="single_video">
-					
-						<div class="myvideo">
-							
-							<div class="video_overlay">
-								
-								<div class="play_button_wrapper"></div><!-- play_button_wrapper -->
-								
-							</div><!-- video_overlay -->
-							
-							<div class="video_page_wistia wistia_embed wistia_async_waichudc62 popover=true popoverContent=thumbnail"></div><!-- video_page_wistia -->
-							
-						</div><!-- myvideo -->
-						
-						<span class="single_video_name">Video Title here : lorem ispum</span><!-- single_video_name -->
-					
-					</div><!-- single_video -->
-					
-					<div class="single_video">
-					
-						<div class="myvideo">
-							
-							<div class="video_overlay">
-								
-								<div class="play_button_wrapper"></div><!-- play_button_wrapper -->
-								
-							</div><!-- video_overlay -->
-							
-							<div class="video_page_wistia wistia_embed wistia_async_waichudc62 popover=true popoverContent=thumbnail"></div><!-- video_page_wistia -->
-							
-						</div><!-- myvideo -->
-						
-						<span class="single_video_name">Video Title here : lorem ispum</span><!-- single_video_name -->
-					
-					</div><!-- single_video -->
-					
-					<div class="single_video">
-					
-						<div class="myvideo">
-							
-							<div class="video_overlay">
-								
-								<div class="play_button_wrapper"></div><!-- play_button_wrapper -->
-								
-							</div><!-- video_overlay -->
-							
-							<div class="video_page_wistia wistia_embed wistia_async_waichudc62 popover=true popoverContent=thumbnail"></div><!-- video_page_wistia -->
-							
-						</div><!-- myvideo -->
-						
-						<span class="single_video_name">Video Title here : lorem ispum</span><!-- single_video_name -->
-					
-					</div><!-- single_video -->
-					
-					
-
-				</div><!-- video_category -->
-				
-				
-				<span class="video_category_title">News Clips</span><!-- video_category_title -->
-				
-				<div class="video_category">
-					
-					<div class="single_video">
-					
-						<div class="myvideo">
-							
-							<div class="video_overlay">
-								
-								<div class="play_button_wrapper"></div><!-- play_button_wrapper -->
-								
-							</div><!-- video_overlay -->
-							
-							<div class="video_page_wistia wistia_embed wistia_async_waichudc62 popover=true popoverContent=thumbnail"></div><!-- video_page_wistia -->
-							
-						</div><!-- myvideo -->
-						
-						<span class="single_video_name">Firm Overview</span><!-- single_video_name -->
-					
-					</div><!-- single_video -->
-					
-					<div class="single_video">
-					
-						<div class="myvideo">
-							
-							<div class="video_overlay">
-								
-								<div class="play_button_wrapper"></div><!-- play_button_wrapper -->
-								
-							</div><!-- video_overlay -->
-							
-							<div class="video_page_wistia wistia_embed wistia_async_waichudc62 popover=true popoverContent=thumbnail"></div><!-- video_page_wistia -->
-							
-						</div><!-- myvideo -->
-						
-						<span class="single_video_name">Video Title here : lorem ispum</span><!-- single_video_name -->
-					
-					</div><!-- single_video -->
-					
-					<div class="single_video">
-					
-						<div class="myvideo">
-							
-							<div class="video_overlay">
-								
-								<div class="play_button_wrapper"></div><!-- play_button_wrapper -->
-								
-							</div><!-- video_overlay -->
-							
-							<div class="video_page_wistia wistia_embed wistia_async_waichudc62 popover=true popoverContent=thumbnail"></div><!-- video_page_wistia -->
-							
-						</div><!-- myvideo -->
-						
-						<span class="single_video_name">Video Title here lorem ispum dolor frugiat nunc.</span><!-- single_video_name -->
-					
-					</div><!-- single_video -->
-					
-					<div class="single_video">
-					
-						<div class="myvideo">
-							
-							<div class="video_overlay">
-								
-								<div class="play_button_wrapper"></div><!-- play_button_wrapper -->
-								
-							</div><!-- video_overlay -->
-							
-							<div class="video_page_wistia wistia_embed wistia_async_waichudc62 popover=true popoverContent=thumbnail"></div><!-- video_page_wistia -->
-							
-						</div><!-- myvideo -->
-						
-						<span class="single_video_name">Video Title here : lorem ispum</span><!-- single_video_name -->
-					
-					</div><!-- single_video -->
-					
-					<div class="single_video">
-					
-						<div class="myvideo">
-							
-							<div class="video_overlay">
-								
-								<div class="play_button_wrapper"></div><!-- play_button_wrapper -->
-								
-							</div><!-- video_overlay -->
-							
-							<div class="video_page_wistia wistia_embed wistia_async_waichudc62 popover=true popoverContent=thumbnail"></div><!-- video_page_wistia -->
-							
-						</div><!-- myvideo -->
-						
-						<span class="single_video_name">Video Title here : lorem ispum</span><!-- single_video_name -->
-					
-					</div><!-- single_video -->
-					
-					<div class="single_video">
-					
-						<div class="myvideo">
-							
-							<div class="video_overlay">
-								
-								<div class="play_button_wrapper"></div><!-- play_button_wrapper -->
-								
-							</div><!-- video_overlay -->
-							
-							<div class="video_page_wistia wistia_embed wistia_async_waichudc62 popover=true popoverContent=thumbnail"></div><!-- video_page_wistia -->
-							
-						</div><!-- myvideo -->
-						
-						<span class="single_video_name">Video Title here : lorem ispum</span><!-- single_video_name -->
-					
-					</div><!-- single_video -->
-					
-					<div class="single_video">
-					
-						<div class="myvideo">
-							
-							<div class="video_overlay">
-								
-								<div class="play_button_wrapper"></div><!-- play_button_wrapper -->
-								
-							</div><!-- video_overlay -->
-							
-							<div class="video_page_wistia wistia_embed wistia_async_waichudc62 popover=true popoverContent=thumbnail"></div><!-- video_page_wistia -->
-							
-						</div><!-- myvideo -->
-						
-						<span class="single_video_name">Video Title here : lorem ispum</span><!-- single_video_name -->
-					
-					</div><!-- single_video -->
-					
-					
-
-				</div><!-- video_category -->
-				
-			</div><!-- video_inner -->
+				</div><!-- video_inner -->
+			 
+			<?php endif; ?>
 						
 		</div><!-- video_wrapper -->
 			
