@@ -164,6 +164,9 @@ body:not(.page-template-template-home) {
 			max-width:209px;
 			margin:0 auto;
 		}
+		> p {
+			margin-bottom: 0;
+		}
 		&:before {
 			margin-bottom: 55px;
 		}
