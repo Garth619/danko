@@ -101,6 +101,17 @@
 		"oAP": "/header.php",
 		"oF": 0
 		},
+	"/images/att-placeholder.jpg": {
+		"ft": 16384,
+		"iS": 4039,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/images/att-placeholder.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
 	"/images/favicon.ico": {
 		"cB": 0,
 		"ft": 8192,

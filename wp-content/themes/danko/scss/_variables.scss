@@ -50,6 +50,16 @@ $themePath: '/wp-content/themes/danko/';
 	font-style: normal;
 }
 
+
+@mixin questa_regular_italic {
+  font-family: questa-grande, serif;
+	font-weight: 400;
+	font-style: italic;
+}
+
+
+
+
 @mixin questa_medium {
   font-family: questa-grande, serif;
 	font-weight: 500;
