@@ -26,7 +26,7 @@ get_header(); ?>
 			 
 				<?php while(has_sub_field('video_center')): ?>
 				
-					<span class="video_category_title">News Clips</span><!-- video_category_title -->
+					<span class="video_category_title"><?php the_sub_field( 'video_category_title' ); ?></span><!-- video_category_title -->
 			 
 					<?php if(get_sub_field('single_video')): ?>
 					
@@ -44,11 +44,11 @@ get_header(); ?>
 								
 									</div><!-- video_overlay -->
 							
-									<div class="video_page_wistia wistia_embed wistia_async_waichudc62 popover=true popoverContent=thumbnail"></div><!-- video_page_wistia -->
+									<div class="video_page_wistia wistia_embed wistia_async_<?php the_sub_field( 'wistia_id' ); ?> popover=true popoverContent=thumbnail"></div><!-- video_page_wistia -->
 							
 								</div><!-- myvideo -->
 						
-								<span class="single_video_name">Firm Overview</span><!-- single_video_name -->
+								<span class="single_video_name"><?php the_sub_field( 'video_title' ); ?></span><!-- single_video_name -->
 					
 							</div><!-- single_video -->
 					    
