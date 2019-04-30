@@ -6,9 +6,7 @@ get_header(); ?>
 
 
 
-	<div id="internal_main">
-	
-
+<div id="internal_main">
 	
 	<div id="outer_trigger" class="outer_container">
 		
@@ -69,73 +67,73 @@ get_header(); ?>
 					
 					<div class="att_accolades_col">
 						
-						<div class="single_accolade">
+						<?php if(get_field('accolades_column_one')): ?>
+						 
+							<?php while(has_sub_field('accolades_column_one')): ?>
+						 
+								
+								<div class="single_accolade">
 							
-							<span class="accolade_title">Professional Associations</span><!-- accolade_title -->
-							
-							<ul>
-								<li>Testing Testing Testing Testing Testing Testing Testing Testing Testing Testing Testing Testing Testing Testing</li>
-								<li>Testing Testing Testing Testing Testing Testing Testing Testing Testing Testing Testing Testing Testing Testing</li>
-								<li>Testing Testing Testing Testing Testing Testing Testing Testing Testing Testing Testing Testing Testing Testing</li>
-								<li>Testing Testing Testing Testing Testing Testing Testing Testing Testing Testing Testing Testing Testing Testing</li>
-								<li>Testing Testing Testing Testing Testing Testing Testing Testing Testing Testing Testing Testing Testing Testing</li>
-							</ul>
-							
-						</div><!-- single_accolade -->
-						
-						<div class="single_accolade">
-							
-							<span class="accolade_title">Professional Associations</span><!-- accolade_title -->
-							
-							<ul>
-								<li>Testing Testing Testing Testing Testing Testing Testing Testing Testing Testing Testing Testing Testing Testing</li>
-								<li>Testing Testing Testing Testing Testing Testing Testing Testing Testing Testing Testing Testing Testing Testing</li>
-								<li>Testing Testing Testing Testing Testing Testing Testing Testing Testing Testing Testing Testing Testing Testing</li>
-								<li>Testing Testing Testing Testing Testing Testing Testing Testing Testing Testing Testing Testing Testing Testing</li>
-								<li>Testing Testing Testing Testing Testing Testing Testing Testing Testing Testing Testing Testing Testing Testing</li>
-							</ul>
-							
-						</div><!-- single_accolade -->
-						
+									<span class="accolade_title"><?php the_sub_field( 'accolades_title' ); ?></span><!-- accolade_title -->
+									
+									<?php if(get_sub_field('accolade_bullets')): ?>
+									
+										<ul>
+									 
+										<?php while(has_sub_field('accolade_bullets')): ?>
+									 
+											<li><?php the_sub_field( 'accolade_bullets' ); ?></li>
+									    
+										<?php endwhile; ?>
+										
+										</ul>
+									 
+									<?php endif; ?>
+														
+								</div><!-- single_accolade -->
+
+						   <?php endwhile; ?>
+						 
+						<?php endif; ?>
+												
 					</div><!-- att_accolades_col -->
 					
-						<div class="att_accolades_col">
+					<div class="att_accolades_col">
 						
-						<div class="single_accolade">
+						<?php if(get_field('accolades_column_two')): ?>
+						 
+							<?php while(has_sub_field('accolades_column_two')): ?>
+						 
+								
+								<div class="single_accolade">
 							
-							<span class="accolade_title">Professional Associations</span><!-- accolade_title -->
-							
-							<ul>
-								<li>Testing Testing Testing Testing Testing Testing Testing Testing Testing Testing Testing Testing Testing Testing</li>
-								<li>Testing Testing Testing Testing Testing Testing Testing Testing Testing Testing Testing Testing Testing Testing</li>
-								<li>Testing Testing Testing Testing Testing Testing Testing Testing Testing Testing Testing Testing Testing Testing</li>
-								<li>Testing Testing Testing Testing Testing Testing Testing Testing Testing Testing Testing Testing Testing Testing</li>
-								<li>Testing Testing Testing Testing Testing Testing Testing Testing Testing Testing Testing Testing Testing Testing</li>
-							</ul>
-							
-						</div><!-- single_accolade -->
-						
-						<div class="single_accolade">
-							
-							<span class="accolade_title">Professional Associations</span><!-- accolade_title -->
-							
-							<ul>
-								<li>Testing Testing Testing Testing Testing Testing Testing Testing Testing Testing Testing Testing Testing Testing</li>
-								<li>Testing Testing Testing Testing Testing Testing Testing Testing Testing Testing Testing Testing Testing Testing</li>
-								<li>Testing Testing Testing Testing Testing Testing Testing Testing Testing Testing Testing Testing Testing Testing</li>
-								<li>Testing Testing Testing Testing Testing Testing Testing Testing Testing Testing Testing Testing Testing Testing</li>
-								<li>Testing Testing Testing Testing Testing Testing Testing Testing Testing Testing Testing Testing Testing Testing</li>
-							</ul>
-							
-						</div><!-- single_accolade -->
+									<span class="accolade_title"><?php the_sub_field( 'accolades_title' ); ?></span><!-- accolade_title -->
+									
+									<?php if(get_sub_field('accolade_bullets')): ?>
+									
+										<ul>
+									 
+										<?php while(has_sub_field('accolade_bullets')): ?>
+									 
+											<li><?php the_sub_field( 'accolade_bullets' ); ?></li>
+									    
+										<?php endwhile; ?>
+										
+										</ul>
+									 
+									<?php endif; ?>
+														
+								</div><!-- single_accolade -->
+
+						   <?php endwhile; ?>
+						 
+						<?php endif; ?>
 						
 					</div><!-- att_accolades_col -->
 
 				</div><!-- att_accolades -->
 				
 			</div><!-- att_bio_bottom -->
-			
-		<?php //get_template_part( 'loop', 'page' ); ?>
 			
 		</div><!-- att_bio_containers -->
 		

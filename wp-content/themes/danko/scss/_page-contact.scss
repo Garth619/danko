@@ -1,0 +1,178 @@
+.contact_wrapper {
+	width:100%;
+	height:605px;
+	display: flex;
+}
+
+
+.contact_left {
+	flex-basis:52%;
+	position: relative;
+	iframe {
+		width:100%;
+		height:100%;
+		position: absolute;
+		top:0;
+		left:0;
+	}
+}
+
+
+.contact_right {
+	flex-grow:1;
+	padding:110px 60px 0 9%;
+	.contact_inner {
+	
+		h1 {
+			color:$blue;
+			display: inline-block;
+			font-size: 90px;
+			padding-bottom:30px;
+			border-bottom: 4px solid $gold;
+			@include questa_regular;
+		}
+		span, a.contact_tel {
+			display: block;
+			font-size: 28px;
+			letter-spacing: 0.025em;
+			line-height: 35px;
+			@include unna;
+		}
+		span.contact_address {
+			margin-top:20px;
+		}
+		a.contact_tel {
+			color:$black;
+			text-decoration: none;
+			transition: all 200ms ease-in-out;
+			margin-top:36px;
+			&:hover {
+				color:$blue;
+			}
+		}
+		a.contact_get_directions {
+			background: $blue;
+			color:#fff;
+			text-transform: uppercase;
+			text-decoration: none;
+			font-size: 14px;
+			letter-spacing: 0.3em;
+			display: inline-block;
+			padding:20px 30px;
+			margin-top:33px;
+			transition: all 200ms ease-in-out;
+			@include poppins_extrabold;
+			&:hover {
+				background: $gold;
+			}
+		}
+	}
+}
+
+
+@media screen and (max-width: 1450px) {
+	
+	
+	.contact_right {
+		padding: 110px 60px 0 4%;
+	}
+	
+	
+} /* Media Query */
+
+
+@media screen and (max-width: 1175px) {
+	
+	
+	
+	
+	.contact_wrapper {
+    height: 555px;
+   }
+	
+	
+	.contact_left {
+		flex-basis:40%;
+	}
+	
+		.contact_right {
+			padding: 110px 60px 0 6%;
+			.contact_inner {
+				h1 {
+					font-size: 65px;
+					line-height: 65px;
+					padding-bottom: 8px;
+				}
+			}
+		}
+		
+		
+} /* Media Query */
+
+
+@media screen and (max-width: 945px) {
+	
+	
+	
+	.contact_wrapper {
+		flex-direction: column;
+		height:auto;
+	}
+	
+	
+	.contact_left {
+		order:2;
+		flex-basis:auto;
+		width:100%;
+		height:400px;
+	}
+	
+	.contact_right {
+		order:1;
+		text-align: center;
+		padding: 57px 98px 65px;
+	}
+	
+	
+	
+} /* Media Query */
+
+
+@media screen and (max-width: 767px) {
+	
+	
+	   
+	
+	.contact_right {
+		padding-left:40px;
+		padding-right:40px;
+		.contact_inner {
+			h1 {
+				font-size: 60px;
+				line-height: 60px;
+				padding-bottom: 8px;
+			}
+		}
+	}
+
+	
+	
+} /* Media Query */
+
+
+@media screen and (max-width: 500px) {
+	
+	
+	.contact_right {
+	
+		.contact_inner {
+			 span.contact_address {
+				 br {
+					 display: none;
+				 }
+			 }
+		}
+	}
+	
+	
+} /* Media Query */
