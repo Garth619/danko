@@ -511,8 +511,7 @@ $('.cr_dropdown ul li ').on('click', function(e) {
   
   $('.cr_dropdown').slideUp(350);
   
-  
-});
+ });
 
 
 $(document).click(function (e){
@@ -525,7 +524,10 @@ $(document).click(function (e){
 		
 		}
 
-	}); 
+}); 
+
+
+
 
 
 
