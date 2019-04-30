@@ -70,6 +70,90 @@ get_header(); ?>
 				</div><!-- cr_dropdown -->
 			
 			</div><!-- cr_filter_wrapper -->
+			
+			<div class="cr_post_wrapper">
+				
+				<div class="cr_single_post">
+					
+					<h2 class="">Title Goes Here</h2>
+					
+					<div class="cr_single_meta">
+						
+						<span>Pedestrian Accident</span>
+						
+						<span>Chandler V. State of California</span>
+						
+					</div><!-- cr_single_meta -->
+					
+					<p>Chris Chandler, age 62, was struck by a car and killed while crossing a state highway. The police blamed Chris for riding his bicycle into oncoming traffic without first looking to make sure the road was clear and investigated the accident as a possible suicide.</p>
+						
+						<p>We determined that Chris was in a marked crosswalk when he was struck. We found witnesses who told us that, contrary to the police report, Chris was walking his bike when he was killed, not riding it. We uncovered documents in the state’s files showing that the crosswalk was unsafe because the pedestrian’s view of oncoming traffic could be blocked by yielding vehicles. The state refused to fix the crosswalk because it did not believe enough people had been injured or killed at that intersection to justify the expenditure.</p>
+						
+						<p>The state’s best settlement offer before trial was $100,000. The jury agreed that the crosswalk was a trap for pedestrians. It found that Chris could not have avoided the accident and was not to blame in any way. In a unanimous verdict, the jury awarded Chris’ family $9.5 million.</p>
+					
+				</div><!-- cr_single_post -->
+				
+				<div class="cr_single_post">
+					
+					<h2 class="">Title Goes Here</h2>
+					
+					<div class="cr_single_meta">
+						
+						<span>Pedestrian Accident</span>
+						
+						<span>Chandler V. State of California</span>
+						
+					</div><!-- cr_single_meta -->
+					
+					<p>Chris Chandler, age 62, was struck by a car and killed while crossing a state highway. The police blamed Chris for riding his bicycle into oncoming traffic without first looking to make sure the road was clear and investigated the accident as a possible suicide.</p>
+						
+						<p>We determined that Chris was in a marked crosswalk when he was struck. We found witnesses who told us that, contrary to the police report, Chris was walking his bike when he was killed, not riding it. We uncovered documents in the state’s files showing that the crosswalk was unsafe because the pedestrian’s view of oncoming traffic could be blocked by yielding vehicles. The state refused to fix the crosswalk because it did not believe enough people had been injured or killed at that intersection to justify the expenditure.</p>
+						
+						<p>The state’s best settlement offer before trial was $100,000. The jury agreed that the crosswalk was a trap for pedestrians. It found that Chris could not have avoided the accident and was not to blame in any way. In a unanimous verdict, the jury awarded Chris’ family $9.5 million.</p>
+					
+				</div><!-- cr_single_post -->
+				
+				<div class="cr_single_post">
+					
+					<h2 class="">Title Goes Here</h2>
+					
+					<div class="cr_single_meta">
+						
+						<span>Pedestrian Accident</span>
+						
+						<span>Chandler V. State of California</span>
+						
+					</div><!-- cr_single_meta -->
+					
+					<p>Chris Chandler, age 62, was struck by a car and killed while crossing a state highway. The police blamed Chris for riding his bicycle into oncoming traffic without first looking to make sure the road was clear and investigated the accident as a possible suicide.</p>
+						
+						<p>We determined that Chris was in a marked crosswalk when he was struck. We found witnesses who told us that, contrary to the police report, Chris was walking his bike when he was killed, not riding it. We uncovered documents in the state’s files showing that the crosswalk was unsafe because the pedestrian’s view of oncoming traffic could be blocked by yielding vehicles. The state refused to fix the crosswalk because it did not believe enough people had been injured or killed at that intersection to justify the expenditure.</p>
+						
+						<p>The state’s best settlement offer before trial was $100,000. The jury agreed that the crosswalk was a trap for pedestrians. It found that Chris could not have avoided the accident and was not to blame in any way. In a unanimous verdict, the jury awarded Chris’ family $9.5 million.</p>
+					
+				</div><!-- cr_single_post -->
+				
+				<div class="cr_single_post">
+					
+					<h2 class="">Title Goes Here</h2>
+					
+					<div class="cr_single_meta">
+						
+						<span>Pedestrian Accident</span>
+						
+						<span>Chandler V. State of California</span>
+						
+					</div><!-- cr_single_meta -->
+					
+					<p>Chris Chandler, age 62, was struck by a car and killed while crossing a state highway. The police blamed Chris for riding his bicycle into oncoming traffic without first looking to make sure the road was clear and investigated the accident as a possible suicide.</p>
+						
+						<p>We determined that Chris was in a marked crosswalk when he was struck. We found witnesses who told us that, contrary to the police report, Chris was walking his bike when he was killed, not riding it. We uncovered documents in the state’s files showing that the crosswalk was unsafe because the pedestrian’s view of oncoming traffic could be blocked by yielding vehicles. The state refused to fix the crosswalk because it did not believe enough people had been injured or killed at that intersection to justify the expenditure.</p>
+						
+						<p>The state’s best settlement offer before trial was $100,000. The jury agreed that the crosswalk was a trap for pedestrians. It found that Chris could not have avoided the accident and was not to blame in any way. In a unanimous verdict, the jury awarded Chris’ family $9.5 million.</p>
+					
+				</div><!-- cr_single_post -->
+				
+			</div><!-- cr_post_wrapper -->
 		
 		</div><!-- case_results_bottom -->
 			
