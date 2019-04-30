@@ -493,6 +493,39 @@ $('.sidebar_box ul.menu > li.menu-item-has-children > a').on('click', function(e
 
 
 
+// case results filter
+
+
+
+$('.cr_input').on('click', function(e) {
+  
+  $('.cr_dropdown').slideToggle(350);
+  
+  $('.cr_filter_wrapper').toggleClass('open');
+
+});
+
+
+
+$('.cr_dropdown ul li ').on('click', function(e) {
+  
+  $('.cr_dropdown').slideUp(350);
+  
+  
+});
+
+
+$(document).click(function (e){
+
+		var container = $(".cr_filter_wrapper.open");
+
+		if (!container.is(e.target) && container.has(e.target).length === 0){
+
+			$('.cr_dropdown').slideUp(350);
+		
+		}
+
+	}); 
 
 
 

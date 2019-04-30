@@ -54,6 +54,20 @@ get_header(); ?>
 					<div class="cr_input_square"></div><!-- cr_input_square -->
 					
 				</div><!-- cr_input -->
+				
+				<div class="cr_dropdown">
+					
+					<ul>
+						<li>test test test test test</li>
+						<li>test test test test test</li>
+						<li>test test test test test</li>
+						<li>test test test test test</li>
+						<li>test test test test test</li>
+						<li>test test test test test</li>
+						<li>test test test test test</li>
+					</ul>
+					
+				</div><!-- cr_dropdown -->
 			
 			</div><!-- cr_filter_wrapper -->
 		

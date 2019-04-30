@@ -48,10 +48,12 @@ img.case_result_img {
 
 .cr_filter_wrapper {
 	max-width:490px;
+	position: relative;
+	cursor: pointer;
 	.cr_input {
 		background: #fff;
 		border:2px solid $gold;
-		padding:22px 37px;
+		padding:22px 45px;
 		position: relative;
 		span {
 			text-transform: uppercase;
@@ -78,6 +80,37 @@ img.case_result_img {
 				border-left: 11px solid transparent;
 				border-right: 11px solid transparent;
 				border-top: 11px solid #fff;
+			}
+		}
+	}
+	.cr_dropdown {
+		background: $grey;
+		display: none;
+		position: absolute;
+		top:83px;
+		width:100%;
+		left:0;
+		ul {
+			padding:42px 45px;
+			li {
+				padding:0;
+				margin:0 0 27px 0;
+				text-transform: uppercase;
+				font-size: 16px;
+				letter-spacing: 0.2em;
+				color:$black;
+				line-height: 22px;
+				transition: all 200ms ease-in-out;
+				@include poppins_extrabold;
+				&:before {
+					display: none;
+				}
+				&:last-of-type {
+					margin-bottom:0;
+				}
+				&:hover {
+					color:$gold;
+				}
 			}
 		}
 	}
