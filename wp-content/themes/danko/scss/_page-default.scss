@@ -74,6 +74,17 @@
 	padding-top:137px;
 }
 
+
+.sidebar_box.blog {
+	ul {
+		li.active {
+			a {
+				color:$blue;
+			}
+		}
+	}
+}
+
 .sidebar_box {
 	margin-bottom:54px;
 	span.sidebar_title {
@@ -90,6 +101,9 @@
 	ul {
 		list-style: none;
 		padding-top:23px;
+		li.active {
+			
+		}
 		li {
 			font-size: 16px;
 			letter-spacing: 0.05em;
@@ -105,6 +119,7 @@
 					color:$blue;
 				}
 			}
+			
 		}
 	}
 	ul.menu {

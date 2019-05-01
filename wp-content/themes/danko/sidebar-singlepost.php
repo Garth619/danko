@@ -10,7 +10,7 @@
 		
 	</div><!-- singlepost_form -->
 	
-	<div class="sidebar_box">
+	<div class="sidebar_box blog">
 		
 		<span class="sidebar_title">Recent Posts</span><!-- sidebar_title -->
 		
@@ -19,7 +19,7 @@
 	</div><!-- sidebar_box -->
 	
 	
-	<div class="sidebar_box">
+	<div class="sidebar_box blog">
 		
 		<span class="sidebar_title">Categories</span><!-- sidebar_title -->
 		
@@ -28,7 +28,7 @@
 	</div><!-- sidebar_box -->
 	
 	
-	<div class="sidebar_box">
+	<div class="sidebar_box blog">
 		
 		<span class="sidebar_title">Archive</span><!-- sidebar_title -->
 		

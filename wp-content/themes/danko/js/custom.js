@@ -479,17 +479,17 @@ $('.sidebar_box ul.menu > li.menu-item-has-children > a').on('click', function(e
 // sidebar current page
 
 
-/*
+
 	var pgurl = window.location.href;
 	
-	$(".sidebar_box ul.case_studies_list li").each(function(){
+	$(".sidebar_box.blog ul li").each(function(){
   
   if($(this).find('a').attr("href") == pgurl)
     
     $(this).addClass("active");
 	
 	})
-*/
+
 
 
 
@@ -514,19 +514,6 @@ $('.cr_dropdown ul li ').on('click', function(e) {
  });
 
 
-/*
-$(document).click(function (e){
-
-		var container = $(".cr_filter_wrapper.open");
-
-		if (!container.is(e.target) && container.has(e.target).length === 0){
-
-			$('.cr_dropdown').slideToggle(350);
-		
-		}
-
-}); 
-*/
 
 
 $('.cr_single_post:last').css({

@@ -187,7 +187,7 @@ nav.desktop {
 }
 
 
-body.single {
+body.single, body.page-template-template-video, body.page-template-template-caseresults, body.page-template-template-bio {
 	.internal_free_consultation {
 		display: block;
 	}
@@ -206,10 +206,10 @@ body.single {
 
 @media screen and (max-width:1840px) {
 	
-	body.single {
-	.internal_free_consultation {
-		display: none;
-	}
+	body.single, body.page-template-template-video, body.page-template-template-caseresults, body.page-template-template-bio {
+		.internal_free_consultation {
+			display: none;
+		}
 	}
 
 	
