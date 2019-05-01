@@ -546,7 +546,24 @@ $('.cr_dropdown ul li').on('click', function(e) {
 });
 
 
+// vue sidebar - im pulling in their https://www.aviationlawmonitor.com blog posts via rest api with vue.js into sidebar box
 
+
+const vm = new Vue({
+  el: '#app',
+  data: {
+    results: [
+      {title: "the very first post", abstract: "lorem ipsum some test dimpsum"},
+      {title: "and then there was the second", abstract: "lorem ipsum some test dimsum"},
+      {title: "third time's a charm", abstract: "lorem ipsum some test dimsum"},
+      {title: "four the last time", abstract: "lorem ipsum some test dimsum"}
+    ]
+  },
+  mounted() {
+    axios.get("https://api.nytimes.com/svc/topstories/v2/home.json?api-key=R590BZd3mHzNgnPVxBDyMW0zvQHPzKe4")
+    .then(response => {this.results = response.data.results})
+  }
+});
 
   
 }); // document ready
