@@ -533,8 +533,7 @@ const vm = new Vue({
     }
   },
   mounted() {
-    axios.get("https://www.aviationlawmonitor.com/wp-json/wp/v2/posts?per_page="+my_data.aviationcount+"")
-    .then(response => {this.posts = response.data})
+    axios.get("https://www.aviationlawmonitor.com/wp-json/wp/v2/posts?per_page="+my_data.aviationcount+"").then(response => {this.posts = response.data})
   }
 });
 
