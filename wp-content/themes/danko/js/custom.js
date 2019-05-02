@@ -509,8 +509,6 @@ $('.cr_dropdown ul li').on('click', function(e) {
 		
 		$('.cr_single_post').fadeOut(300);
 		
-			
-		
 		$('.' + mydata + '').delay(600).fadeIn(400);
 		
 		$('.' + mydata + ':last').css({

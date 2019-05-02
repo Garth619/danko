@@ -3,19 +3,7 @@
 
 <div id="internal_main">
 	
-	<div class="inner_banner">
-		
-		<div class="banner_content">
-			
-			<h1 class="banner_header">Personal Injury Blog</h1><!-- banner_header -->
-			
-			<a class="banner_button" href="#free_consultation">schedule free consultation</a>
-			
-		</div><!-- banner_content -->
-		
-		<img src="<?php bloginfo('template_directory');?>/images/hero-intl.jpg"/>
-		
-	</div><!-- inner_banner -->
+	<?php get_template_part( 'page-templates/template', 'internalbanner' ); ?>
 	
 	<div id="outer_trigger" class="outer_container">
 		
