@@ -20,41 +20,46 @@ function load_my_styles_scripts() {
     wp_register_script( 'jquery', includes_url( '/js/jquery/jquery.js' ), false, NULL, true );
     wp_enqueue_script( 'jquery' );
 
-		// custom js to fall uner jquery in footer
+		// getting blog posts from outsite website and putting into aviation sidebar
+    
+    if(get_field('related_articles_sidebar') == 'Aviationlawmonitor.com Articles') {
+	    
+	    // custom js to fall under jquery in footer
 		    
-    wp_register_script( 'jquery-addon', get_template_directory_uri() . '/js/custom-min.js','', 1);
+			wp_register_script( 'jquery-addon', get_template_directory_uri() . '/js/custom-min.js','', 1);
 
 		
-		// Localized PHP Data that needs to be passed onto my custom-min.js file, this grabs the live chat script acf and applies to my lazyload "getScript" function
+			// Localized PHP Data that needs to be passed onto my custom-min.js file as dynaic variable
 
 			
-		$livechat = get_field('live_chat_script','option');
-		
-		
+			$aviation_post_count = get_field('sidebar_categories_post_count_aviationlawmonitor');
 		
 			// Localize the script with new data array 
 		
 			$translation_array = array(
-    		'live_chat' => $livechat
+    		'aviationcount' => $aviation_post_count
 			);
 
 			wp_localize_script( 'jquery-addon', 'my_data', $translation_array );
-		
-		
-		
-		// carry on to enqueue script like normal, but now it contains my needed js variable with php data tied to it from above
-		
-
-		// Enqueue Script
+			
+			// Enqueue Scripts
 		    
-    wp_enqueue_script( 'jquery-addon', get_template_directory_uri() . '/js/custom-min.js', 'jquery', '', true );
+			wp_enqueue_script( 'jquery-addon', get_template_directory_uri() . '/js/custom-min.js', 'jquery', '', true );
+	    
+	    wp_enqueue_script( 'vue-addon', get_template_directory_uri() . '/js/vue.js', 'jquery', '', true );
     
+			wp_enqueue_script( 'axios-addon', get_template_directory_uri() . '/js/axios.js', 'jquery', '', true );
+	    
+	  }
+	  
+	  else {
+		  
+		  wp_enqueue_script( 'jquery-addon', get_template_directory_uri() . '/js/custom-min.js', 'jquery', '', true );
+		  
+		}
+		
+		// wp_enqueue_script( 'jquery-mygravity', get_template_directory_uri() . '/js/gravityforms-min.js', 'jquery', '', true );
     
-    wp_enqueue_script( 'vue-addon', get_template_directory_uri() . '/js/vue.js', 'jquery', '', true );
-    
-    // wp_enqueue_script( 'jquery-mygravity', get_template_directory_uri() . '/js/gravityforms-min.js', 'jquery', '', true );
-    
-
  }
  
  add_action( 'wp_enqueue_scripts', 'load_my_styles_scripts', 20 );

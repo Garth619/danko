@@ -255,30 +255,6 @@ jQuery(document).ready(function($){
     createWaypoint('internal_main', '#internal_main', 'visible', 89, null, true);
     
     
-   
-		
-
-		
-		/* Live Chat - Call function when script needs to be loaded either by hover, click or waypoints
-   --------------------------------------------------------------------------------------------------- */ 
-   
-   
-   
-   function livechatLoad() {
-	   if(my_data.live_chat) {
-      jQuery.getScript(my_data.live_chat, function(data, textStatus, jqxhr) {
-        console.log('Live Chat load:', textStatus); // Success
-      });
-      // alert( my_data.live_chat);
-      }
-    }
-   
-   
-   // createWaypoint('section_one', null, null, -100, livechatLoad, false);
-   // createWaypoint('internal_trigger', null, null, -100, livechatLoad, false);
-
-
-
 
         
     
@@ -551,19 +527,19 @@ $('.cr_dropdown ul li').on('click', function(e) {
 
 const vm = new Vue({
   el: '#app',
-  data: {
-    results: [
-      {title: "the very first post", abstract: "lorem ipsum some test dimpsum"},
-      {title: "and then there was the second", abstract: "lorem ipsum some test dimsum"},
-      {title: "third time's a charm", abstract: "lorem ipsum some test dimsum"},
-      {title: "four the last time", abstract: "lorem ipsum some test dimsum"}
-    ]
+  data () {
+    return {
+      posts: []
+    }
   },
   mounted() {
-    axios.get("https://api.nytimes.com/svc/topstories/v2/home.json?api-key=R590BZd3mHzNgnPVxBDyMW0zvQHPzKe4")
-    .then(response => {this.results = response.data.results})
+    axios.get("https://www.aviationlawmonitor.com/wp-json/wp/v2/posts?per_page="+my_data.aviationcount+"")
+    .then(response => {this.posts = response.data})
   }
 });
+
+
+
 
   
 }); // document ready

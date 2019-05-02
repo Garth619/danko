@@ -1,33 +1,6 @@
 
 <div class="sidebar_wrapper">
 	
-	
-	<div class="sidebar_box">
-		
-		<span class="sidebar_title">Vue Practice</span><!-- sidebar_title -->
-		
-		
-			
-			
-	<div id="app">
-		<div class="columns medium-3" v-for="result in results">
-  <div class="card">
-    <div class="card-divider">
-      {{ result.title }}
-    </div>
-    <div class="card-section">
-      <p>{{ result.abstract }}.</p>
-    </div>
-  </div>
-</div>
-	</div>
-	
-			
-	
-		
-	</div><!-- sidebar_box -->
-	
-	
 	<div class="sidebar_box">
 		
 		<span class="sidebar_title">Practice Areas</span><!-- sidebar_title -->
@@ -37,10 +10,35 @@
 	</div><!-- sidebar_box -->
 	
 	<?php 
+		
+		if(get_field('related_articles_sidebar') == 'Aviationlawmonitor.com Articles') : ?>
+	
+			<div class="sidebar_box">
+		
+				<span class="sidebar_title">Related Articles</span><!-- sidebar_title -->
+		
+				<div id="app">
+			
+					<ul>
+			
+						<li v-for="pos in posts">
+		
+							<a :href="pos.link" target="_blank" rel="noopener">{{pos.title.rendered}}</a>
+			
+					 </li>
+			
+					</ul>
+	
+				</div><!-- vue app -->
+	
+			</div><!-- sidebar_box -->
+			
+			
+			<?php else:
+	
+			$terms = get_field('sidebar_categories');
 
-		$terms = get_field('sidebar_categories');
-
-		if( $terms ): 
+			if( $terms ): 
 
 			foreach( $terms as $term ): 
 		
@@ -90,7 +88,10 @@
 		
 	</div><!-- sidebar_box -->
 	
-	<?php endif;?>
+	<?php endif;
+	
+	
+	endif;?>
 	
 	
 </div><!-- sidebar_wrapper -->
