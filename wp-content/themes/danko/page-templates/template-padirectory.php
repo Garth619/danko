@@ -20,5 +20,4 @@ get_header(); ?>
 	
 </div><!-- internal_main -->
 
-
 <?php get_footer(); ?>

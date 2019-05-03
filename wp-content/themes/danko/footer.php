@@ -76,5 +76,32 @@
 <?php wp_footer();?>
 
 
+<?php if(get_field('related_articles_sidebar') == 'Aviationlawmonitor.com Articles') { ?>
+
+	
+	<script type="text/javascript">
+
+		jQuery(document).ready(function($){
+
+			const vm = new Vue({
+				el: '#app',
+				data () {
+					return {
+						posts: []
+    			}
+  			},
+				mounted() {
+					axios.get("https://www.aviationlawmonitor.com/wp-json/wp/v2/posts?per_page="+my_data.aviationcount+"").then(response => {this.posts = response.data})
+				}
+			});
+		
+		});
+
+	</script>
+
+
+<?php } ?>
+
+
 </body>
 </html>

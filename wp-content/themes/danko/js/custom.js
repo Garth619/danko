@@ -520,23 +520,5 @@ $('.cr_dropdown ul li').on('click', function(e) {
 });
 
 
-// vue sidebar - im pulling in their https://www.aviationlawmonitor.com blog posts via rest api with vue.js into sidebar box
-
-
-const vm = new Vue({
-  el: '#app',
-  data () {
-    return {
-      posts: []
-    }
-  },
-  mounted() {
-    axios.get("https://www.aviationlawmonitor.com/wp-json/wp/v2/posts?per_page="+my_data.aviationcount+"").then(response => {this.posts = response.data})
-  }
-});
-
-
-
-
   
 }); // document ready
