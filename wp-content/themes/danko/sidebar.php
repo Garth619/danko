@@ -4,6 +4,16 @@
 	<div class="sidebar_box">
 		
 		<?php
+			
+				if(is_404()) { ?>
+					
+					
+					<span class="sidebar_title"><?php the_field( '404_sidebar_title','option'); ?></span>
+					
+					<?php wp_nav_menu( array( 'container_class' => 'menu-header', 'theme_location' => 'pa_menu' ) ); ?>
+					
+					
+				<?php }
 				
 				if ( get_field('sidebar_menu') ){ //use same classes as widgets ?>
     
@@ -90,8 +100,16 @@
 		if(get_field('related_articles_sidebar') == 'Aviationlawmonitor.com Articles') : ?>
 	
 			<div class="sidebar_box">
-		
-				<span class="sidebar_title">Related Articles</span><!-- sidebar_title -->
+				
+				<?php if(get_field('aviationlawmonitor_sidebar_title')) :?>
+				
+					<span class="sidebar_title"><?php the_field( 'aviationlawmonitor_sidebar_title' ); ?></span><!-- sidebar_title -->
+				
+					<?php else: ?>
+				
+					<span class="sidebar_title">Related Articles</span><!-- sidebar_title -->
+				
+				<?php endif;?>
 		
 				<div id="app">
 			
@@ -128,11 +146,16 @@
 	
 	<div class="sidebar_box">
 		
-		<span class="sidebar_title">Related Articles</span><!-- sidebar_title -->
+		<?php if(get_field('sidebar_title_for_related_sidebars')) :?>
 		
-		
-		<?php 
+				<span class="sidebar_title"><?php the_field( 'sidebar_title_for_related_sidebars' ); ?></span><!-- sidebar_title -->
 			
+				<?php else:?>
+				
+				<span class="sidebar_title">Related Articles</span><!-- sidebar_title -->
+			
+		<?php endif;
+		
 			$args = array(
 				'post_type' => 'post',
 				'order' => 'ASC',

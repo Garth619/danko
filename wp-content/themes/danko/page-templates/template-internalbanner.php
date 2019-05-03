@@ -3,7 +3,19 @@
 	<div class="banner_content">
 
 
-		<?php  // archive page
+		<?php  
+			
+			// not found
+			
+			if(is_404()) { ?>
+			
+				<h1 class="banner_header"><?php the_field( '404_title','option'); ?></h1>
+				
+			<?php } 
+			
+			
+			
+			// archive page
 				
 			if(is_archive()) {
 			

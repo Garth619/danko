@@ -1,7 +1,8 @@
-span.go_back {
+strong.go_back {
 	color:$blue;
 	text-decoration: underline;
 	cursor: pointer;
+	font-weight:400;
 	transition: all 200ms ease-in-out;
 	&:hover {
 		color:$gold;
