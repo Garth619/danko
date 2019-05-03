@@ -20,8 +20,15 @@
 			
 			<div class="content_wrapper content">
 				
-				<h1><?php the_title();?></h1>
+				<?php if(get_field('banner_title') == 'H1 Tags') : ?>
+					
+					<h2><?php the_title();?></h2>
+					
+					<?php else:?>
+					
+					<h1><?php the_title();?></h1>
 				
+				<?php endif; ?>
 				
 				<?php get_template_part( 'loop', 'page' ); ?>
 				

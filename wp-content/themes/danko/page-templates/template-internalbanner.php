@@ -61,12 +61,32 @@
 		
 			
 			<?php if(get_field('override_global_banner_title')) : ?>
-			
-				<span><?php the_field( 'override_global_banner_title'); ?></span>
 				
-				<?php else: ?>
+				<?php if(get_field('banner_title') == 'H1 Tags') : ?>
+					
+					<h1 class="banner_header"><?php the_field( 'override_global_banner_title'); ?></h1>
+					
+					<?php else:?>
+					
+					<span><?php the_field( 'override_global_banner_title'); ?></span>
 				
-				<span><?php the_field( 'inner_banner_default_title', 'option'); ?></span>
+				<?php endif; ?>
+				
+				<?php 
+					
+					else: // default title
+					
+				?>
+					 
+					 <?php if(get_field('banner_title') == 'H1 Tags') : ?>
+					 
+						 <h1 class="banner_header"><?php the_field( 'inner_banner_default_title', 'option'); ?></h1>
+					 
+						 <?php else:?>
+						
+						 <span><?php the_field( 'inner_banner_default_title', 'option'); ?></span>
+						
+					<?php endif; ?>
 			
 			<?php endif; ?>
 			
