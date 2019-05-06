@@ -56,6 +56,21 @@
 }
 
 
+@media screen and (max-width: 1066px) {
+	
+	
+	.pa_directory_wrapper {
+		margin-top:45px;
+	}
+	
+    
+	
+	
+	
+	
+} /* Media Query */
+
+
 @media screen and (max-width: 1000px) {
 	
 	
@@ -76,7 +91,7 @@
 	
 	
 	.pa_directory_wrapper {
-		margin: 75px auto 0;
+		margin: 35px auto 0;
 		ul.sub-menu {
 			column-count:1;
 			padding-bottom: 44px;

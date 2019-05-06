@@ -41,7 +41,7 @@ img.case_result_img {
 
 
 .case_results_bottom {
-	padding:40px 11% 0;
+	padding: 18px 11% 0;
 }
 
 
@@ -261,6 +261,15 @@ img.case_result_img {
 	
 	.case_results_bottom {
 		padding-top: 20px;
+	}
+	
+	
+	body.page-template-template-testimonials {
+		.banner_content {
+			h1.banner_header {
+				text-align: center;
+			}
+		}
 	}
 	
 

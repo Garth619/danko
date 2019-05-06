@@ -343,7 +343,7 @@ $("ul > li.menu-item-has-children > a[href='#']").removeAttr("href");
     
     if (windowWidth <= 1510 && windowWidth > 1175) {
         
-      	//$('nav').removeClass('desktop');
+      	$('nav').removeClass('desktop');
       	
     		$('nav').addClass('laptop');
     		
@@ -401,7 +401,7 @@ $("ul > li.menu-item-has-children > a[href='#']").removeAttr("href");
    
     if (windowWidth <= 1175) {
 	    
-	    //$('nav').removeClass('desktop');
+	    $('nav').removeClass('desktop');
 	    
 	    $('nav').addClass('tablet');
 	    

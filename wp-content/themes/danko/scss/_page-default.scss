@@ -187,8 +187,22 @@ body.ready {
 
 .content_wrapper {
 	flex-grow:1;
-	padding:112px 0 0 12%;
+	padding:112px 0 0 9%;
 }
+
+
+
+body.page-template-default {
+	.content {
+		blockquote {
+			margin-top:60px;
+			margin-bottom: 60px;
+		}
+	}
+}
+
+
+
 
 
 @media screen and (max-width: 1775px) {
@@ -282,8 +296,8 @@ body.ready {
 		padding:62px 0 0;
 		h1.banner_header {
 			color:$blue;
-			font-size: 65px;
-			line-height: 65px;
+			font-size: 75px;
+			line-height: 75px;
 			text-align: left;
 			@include questa_regular;
 		}
