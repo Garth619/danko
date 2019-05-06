@@ -96,6 +96,15 @@
 		height:299px;
 		justify-content: center;
 		align-items: center;
+		cursor: pointer;
+		&:hover {
+			.play_button_wrapper {
+				border: 2px solid $gold;
+				&:before {
+					background:$gold;
+				}
+			}
+		}
 		.play_button_wrapper {
 			width:107px;
 			height:107px;
@@ -104,12 +113,14 @@
 			top:0;
 			left:0;
 			pointer-events: none;
+			transition: border 200ms ease-in-out;
 			&:before {
 				width:73px;
 				height:73px;
 				top: 14px;
 				left: 14px;
 				box-shadow: 0px 0px 12px 4px rgba(95,168,245,0.4);
+				transition: background 200ms ease-in-out;
 			}
 			&:after {
 				top: 41px;

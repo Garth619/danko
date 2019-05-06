@@ -74,6 +74,7 @@
 	cursor: pointer;
 	top:100px;
 	left:-75px;
+	transition: border 200ms ease-in-out;
 	&:before, &:after {
 		content:"";
 		display: block;
@@ -86,7 +87,7 @@
 		border-radius: 50%;
 		top:17px;
 		left:17px;
-		
+		transition: background 200ms ease-in-out;
 	}
 	&:after {
 		top: 56px;
@@ -96,6 +97,12 @@
 		border-top: 15px solid transparent;
 		border-bottom: 15px solid transparent;
 		border-left: 20px solid #fff;
+	}
+	&:hover {
+		border: 2px solid $gold;
+		&:before {
+			background:$gold;
+		}
 	}
 }
 
@@ -122,7 +129,7 @@ a.free_consult_button {
 	margin:43px 0 0;
 	padding:25px 40px;
 	border:2px solid $blue;
-	transition: all 200ms ease-in-out;
+	transition: background 200ms ease-in-out, color 200ms ease-in-out;
 	@include questa_medium_italic;
 	&:hover {
 		color:$blue;

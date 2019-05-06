@@ -118,7 +118,7 @@ jQuery(document).ready(function($){
       console.log('images loaded');
     }
 
-    // createWaypoint('section_two', null, null, '100%', loadImages, false);
+    createWaypoint('section_one', null, null, -1, loadImages, false);
 
 
 
@@ -228,30 +228,36 @@ jQuery(document).ready(function($){
     }
 		
 		
-		
+		$('body').addClass('ready');
 
     createWaypoint('section_one', 'header', 'visible', 89, null, true);
+    
     createWaypoint('section_one', '#section_one', 'visible', 89, null, true);
     
+    createWaypoint('section_three', '#section_three', 'visible', 250, null, true);
+    
     createWaypoint('section_three', '.dm_sec_three', 'visible', '40%', null, true);
+    
     createWaypoint('section_four', '.dm_sec_three', 'hide', '70%', null, true);
     
-    
-    
     createWaypoint('section_four', '.dm_sec_four', 'visible', '40%', null, true);
+    
+    createWaypoint('section_four', '#section_four', 'visible', 300, null, true);
+    
     createWaypoint('section_five', '.dm_sec_four', 'hide', '80%', null, true);
     
-    
-    
     createWaypoint('section_five', '.dm_sec_five', 'visible', '40%', null, true);
+    
+    createWaypoint('sec_five_img_trigger', '#sec_five_img_trigger', 'visible', 400, null, true);
+    
     createWaypoint('footer_trigger', '.dm_sec_five', 'hide', '80%', null, true);
     
-    
     createWaypoint('outer_trigger', '.dm_internal', 'visible', '40%', null, true);
+    
     createWaypoint('footer_trigger', '.dm_internal', 'hide', '80%', null, true);
     
-    
     createWaypoint('internal_main', 'header', 'visible', 89, null, true);
+    
     createWaypoint('internal_main', '#internal_main', 'visible', 89, null, true);
     
     

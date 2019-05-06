@@ -25,7 +25,7 @@
 	
 	<div class="sec_five_bottom">
 		
-		<div class="sec_five_img">
+		<div id="sec_five_img_trigger" class="sec_five_img">
 		
 			<img src="<?php bloginfo('template_directory');?>/images/img-team.jpg"/><!-- sec_five_img -->
 		
