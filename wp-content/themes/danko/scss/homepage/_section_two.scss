@@ -164,7 +164,7 @@
 	
 	
 	.sec_two_single_slide {
-		flex-basis:31%;
+		flex-basis:31.6%;
 		&:last-of-type {
 			display: none;
 		}
@@ -172,6 +172,7 @@
 	
 	
 } /* Media Query */
+
 
 
 @media screen and (max-width: 1225px) {
