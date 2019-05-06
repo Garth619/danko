@@ -31,7 +31,7 @@
 					
 					<a class="contact_tel" href="tel:">(650) 453-3600</a><!-- contact_address -->
 					
-					<a class="contact_get_directions" href="" target="_blank" rel="noopener">Get Directions</a><!-- contact_get_directions -->
+					<a class="contact_get_directions" href="https://www.google.com/maps/place/333+Twin+Dolphin+Dr+%23145,+Redwood+City,+CA+94065/data=!4m2!3m1!1s0x808f98aee7386455:0x75010db6d1e2bd1c?sa=X&ved=2ahUKEwirtr6EqofiAhVYip4KHVfPAYYQ8gEwAHoECAoQAQ" target="_blank" rel="noopener">Get Directions</a><!-- contact_get_directions -->
 					
 				</div><!-- contact_inner -->
 				

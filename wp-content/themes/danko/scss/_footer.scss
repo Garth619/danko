@@ -39,7 +39,7 @@ footer {
 		justify-content: space-between;
 		li {
 			margin-bottom:29px;
-			flex-basis:32%;
+			flex-basis: 32.4%;
 			position: relative;
 			&:after {
 				content:"*";
@@ -61,7 +61,7 @@ footer {
 				background:$grey;
 				font-size: 16px;
 				letter-spacing: 0.2em;
-				padding:25px 35px 17px 20px;
+				padding: 24px 35px 18px 20px;
 				border-bottom:4px solid transparent;
 				transition: border 200ms ease-in-out;
 				@include poppins_extrabold;
@@ -199,7 +199,7 @@ span.footer_title {
 			text-transform: uppercase;
 			font-size: 13px;
 			letter-spacing: 0.2em;
-			margin-bottom:18px;
+			margin-bottom:16px;
 			@include poppins_bold;
 			&:before {
 				content:"";
@@ -229,7 +229,7 @@ span.footer_title {
 		font-size:13px;
 		line-height: 20px;
 		display: block;
-		padding-top:35px;
+		padding-top: 44px;
 		letter-spacing: 0.2em;
 		@include poppins_bold;	
 	}

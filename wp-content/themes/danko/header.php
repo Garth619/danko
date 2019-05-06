@@ -63,7 +63,7 @@
 		
 		<div class="header_middle">
 			
-			<nav>
+			<nav class="desktop">
 				
 				<div class="nav_inner">
 				

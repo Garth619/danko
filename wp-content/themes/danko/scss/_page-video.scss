@@ -40,6 +40,16 @@ span.video_category_title {
 	height:375px;
 	flex-basis:31%;
 	margin-bottom:40px;
+	&:hover {
+		.video_overlay {
+			.play_button_wrapper {
+				border:2px solid $gold;
+				&:before {
+					background:$gold;
+				}
+			}
+		}
+	}
 	.myvideo {
 		height:250px;
 		position: relative;
@@ -62,12 +72,14 @@ span.video_category_title {
 			top:0;
 			left:0;
 			position: relative;
+			transition:all solid ease-in-out;
 			&:before {
 				width:74px;
 				height:74px;
 				top: 12px;
 				left: 12px;
 				box-shadow: 0px 0px 12px 4px rgba(95,168,245,0.5);
+				transition:all solid ease-in-out;
 			}
 			&:after {
 				border-top: 10px solid transparent;
@@ -76,6 +88,7 @@ span.video_category_title {
 				top: 39px;
 				left: 44px;
 			}
+			
 		}
 	}
 	.video_page_wistia {

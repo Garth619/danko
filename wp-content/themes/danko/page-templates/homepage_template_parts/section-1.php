@@ -36,7 +36,7 @@
 			
 			<div class="sec_one_inner">
 				
-				<div class="play_button_wrapper"></div><!-- play_button_wrapper -->
+				<div class="play_button_wrapper wistia_embed wistia_async_waichudc62 popover=true popoverContent=html"></div><!-- play_button_wrapper -->
 				
 					<span class="sec_one_title">We discover <strong>the truth.</strong></span><!-- sec_one_title -->
 				

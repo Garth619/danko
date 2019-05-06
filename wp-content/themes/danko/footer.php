@@ -35,7 +35,7 @@
 
 				<a class="footer_tel" href="tel:6504533600">(650) 453-3600</a><!-- footer_tel -->
 				
-				<a class="footer_get_directions" href="" target="_blank" rel="noopener">Get Directions</a><!-- footer_get_directions -->
+				<a class="footer_get_directions" href="https://www.google.com/maps/place/333+Twin+Dolphin+Dr+%23145,+Redwood+City,+CA+94065/data=!4m2!3m1!1s0x808f98aee7386455:0x75010db6d1e2bd1c?sa=X&ved=2ahUKEwirtr6EqofiAhVYip4KHVfPAYYQ8gEwAHoECAoQAQ" target="_blank" rel="noopener">Get Directions</a><!-- footer_get_directions -->
 				
 			</div><!-- footer_col_two -->
 			
@@ -44,10 +44,10 @@
 				<div class="footer_col_three_inner">
 				
 					<ul>
-						<li><a class="" href="">Aviation Blog</a></li>
-						<li><a class="" href="">Personal Injury Blog</a></li>
-						<li><a class="" href="">Privacy Policy</a></li>
-						<li><a class="" href="">Disclaimer</a></li>
+						<li><a class="" href="https://www.aviationlawmonitor.com" target="_blank" rel="noopener">Aviation Blog</a></li>
+						<li><a class="" href="<?php the_permalink(12);?>">Personal Injury Blog</a></li>
+						<li><a class="" href="<?php the_permalink(863);?>">Privacy Policy</a></li>
+						<li><a class="" href="<?php the_permalink(865);?>">Disclaimer</a></li>
 					</ul>
 				
 					<div class="copyright_wrapper">

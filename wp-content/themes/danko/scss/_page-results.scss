@@ -49,6 +49,7 @@ img.case_result_img {
 	max-width:490px;
 	position: relative;
 	cursor: pointer;
+	z-index:1;
 	.cr_input {
 		background: #fff;
 		border:2px solid $gold;

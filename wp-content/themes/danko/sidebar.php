@@ -77,7 +77,7 @@
             echo '<!-- no ancestral sidebar -->';
             
             dynamic_sidebar( 'default_sidebar' );
-            // break;
+            //break;
         }
 
     }

@@ -16,7 +16,7 @@
 				
 				<div class="news_row">
 					
-					<a class="" href="">
+					<a class="" href="<?php the_permalink(638);?>">
 					
 						<div class="news_logo">
 						
@@ -40,7 +40,7 @@
 				
 				<div class="news_row">
 					
-					<a class="" href="">
+					<a class="" href="<?php the_permalink(638);?>">
 					
 						<div class="news_logo">
 						
@@ -64,7 +64,7 @@
 				
 			</div><!-- news_feed -->
 			
-			<a class="news_view_more" href="">View More</a><!-- news_view_more -->
+			<a class="news_view_more" href="<?php the_permalink(12);?>">View More</a><!-- news_view_more -->
 			
 		</div><!-- sec_four_left_inner -->
 		

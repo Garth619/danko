@@ -30,7 +30,7 @@
 					
 						<span class="sec_two_content">Our client was walking down the sidewalk on her lunch break when there was an explosion in an underground electrical vault that blew off a manhole cover and severely burned her.</span><!-- sec_two_content -->
 						
-						<a class="sec_two_readmore" href="">Read More</a><!-- sec_two_readmore -->
+						<a class="sec_two_readmore" href="<?php the_permalink(54);?>">Read More</a><!-- sec_two_readmore -->
 					
 				</div><!-- sec_two_hover -->
 				
@@ -64,7 +64,7 @@
 					
 					<span class="sec_two_content">Our client was walking down the sidewalk on her lunch break when there was an explosion in an underground electrical vault that blew off a manhole cover and severely burned her.</span><!-- sec_two_content -->
 					
-					<a class="sec_two_readmore" href="">Read More</a><!-- sec_two_readmore -->
+					<a class="sec_two_readmore" href="<?php the_permalink(54);?>">Read More</a><!-- sec_two_readmore -->
 					
 				</div><!-- sec_two_hover -->
 				
@@ -98,7 +98,7 @@
 					
 					<span class="sec_two_content">Our client was walking down the sidewalk on her lunch break when there was an explosion in an underground electrical vault that blew off a manhole cover and severely burned her.</span><!-- sec_two_content -->
 					
-					<a class="sec_two_readmore" href="">Read More</a><!-- sec_two_readmore -->
+					<a class="sec_two_readmore" href="<?php the_permalink(54);?>">Read More</a><!-- sec_two_readmore -->
 					
 				</div><!-- sec_two_hover -->
 				
@@ -132,7 +132,7 @@
 					
 					<span class="sec_two_content">Our client was walking down the sidewalk on her lunch break when there was an explosion in an underground electrical vault that blew off a manhole cover and severely burned her.</span><!-- sec_two_content -->
 					
-					<a class="sec_two_readmore" href="">Read More</a><!-- sec_two_readmore -->
+					<a class="sec_two_readmore" href="<?php the_permalink(54);?>">Read More</a><!-- sec_two_readmore -->
 					
 				</div><!-- sec_two_hover -->
 				
