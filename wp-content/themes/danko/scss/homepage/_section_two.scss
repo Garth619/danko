@@ -178,13 +178,13 @@
 @media screen and (max-width: 1225px) {
 	
 	.sec_two_inner {
-		padding: 87px 48px 120px;
+		padding: 87px 48px 112px;
 	}
 	
 	
 	.sec_two_slider {
 		display: block;
-		max-width:600px;
+		max-width:570px;
 		margin:0 auto;
 		.slick-dots {
 			bottom: -50px;
@@ -253,7 +253,7 @@
 				display: block;
 				font-size: 18px;
 				line-height: 35px;
-				max-width: 100%;
+				max-width: 420px;
 				margin:33px auto 40px;
 				@include poppins_medium;
 			}
@@ -302,6 +302,7 @@
 		.sec_two_reg_inner {
 			span.sec_two_content {
 				margin: 23px auto 40px;
+				max-width: 270px;
 			}
 		}
 	}

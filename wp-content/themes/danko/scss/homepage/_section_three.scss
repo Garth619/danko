@@ -243,7 +243,7 @@
 	
 	.sec_three_inner {
 		padding: 86px 0 0px;
-		max-width:600px;
+		max-width: 600px;
 		h1.sec_three_header {
 			font-size: 75px;
 			line-height: 75px;
@@ -253,12 +253,15 @@
 	
 	
 	.sec_three_top {
-		margin: 65px 0px 0 0;
+		margin: -8px 0px 0 0;
 		display: block;
 	}
 	
 	.sec_three_video_wrapper {
 		margin-bottom:50px;
+		margin-left:auto;
+		margin-right:auto;
+		max-width:570px;
 		.video_overlay {
 			height:420px;
 		}
@@ -271,17 +274,21 @@
 	
 	.sec_three_top_content {
 		padding-left:0;
+		max-width:570px;
+		margin-left:auto;
+		margin-right:auto;
 	}
 	
 	
 	.sec_three_blockquote_wrapper {
 		margin: 90px auto 0;
-		max-width: 560px;
+		max-width: 570px;
 	}
 	
 	.sec_three_bottom {
-    margin: 103px 0 0;
+    margin: 103px auto 0;
     column-count:1;
+    max-width:570px;
 	}	
 	
 } /* Media Query */
@@ -335,13 +342,13 @@
 	}
 	
 	.sec_three_top {
-    margin: 58px 0px 0 0;
-    
+    margin: 8px 0px 0 0;
    }
    
    
    .sec_three_blockquote_wrapper { 
 	   margin: 80px auto 0;
+	   max-width: 281px;
    }
    
    .sec_three_bottom {
