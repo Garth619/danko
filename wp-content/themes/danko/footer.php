@@ -77,7 +77,7 @@
 				
 					<div class="copyright_wrapper">
 					
-						<span class="copyright">&copy;<?php echo date("Y"); ?> danko meredith. All rights reserved</span>
+						<span class="copyright">&copy;<?php echo date("Y"); ?> <?php the_field( 'copyright','option'); ?></span>
 					
 						<a class="ilawyer" href="//ilawyermarketing.com" target="_blank" rel="noopener">
 						
