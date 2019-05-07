@@ -9,21 +9,23 @@
 	
 	<div class="sec_three_inner content">
 		
-		<h1 class="sec_three_header">Bay Area Personal Injury Lawyers</h1><!-- sec_three_header -->
+		<h1 class="sec_three_header"><?php the_field( 'section_three_header' ); ?></h1><!-- sec_three_header -->
 		
 		<div class="sec_three_top">
 			
 			<div class="sec_three_video_wrapper">
 				
-					<span class="sec_three_video_title">Watch Video About Firm</span><!-- sec_three_video_title -->
+					<span class="sec_three_video_title"><?php the_field( 'section_three_video_call_to_action' ); ?></span><!-- sec_three_video_title -->
 				
 					<div class="video_overlay">
 						
 						<div class="play_button_wrapper"></div><!-- play_button_wrapper -->
 						
-						<img class="video_placeholder" src="<?php bloginfo('template_directory');?>/images/video-placeholder.jpg"/>
+						<?php $section_three_wistia_thumbnail = get_field( 'section_three_wistia_thumbnail' ); ?>
+
+						<img class="video_placeholder" src="<?php echo $section_three_wistia_thumbnail['url']; ?>" alt="<?php echo $section_three_wistia_thumbnail['alt']; ?>" />
 						
-						<div class="mywistia wistia_embed wistia_async_waichudc62 popover=true popoverContent=html"></div><!-- mywistia -->
+						<div class="mywistia wistia_embed wistia_async_<?php the_field( 'section_three_wistia_id' ); ?> popover=true popoverContent=html"></div><!-- mywistia -->
 						
 					</div><!-- video_overlay -->
 				
@@ -31,38 +33,25 @@
 			
 			<div class="sec_three_top_content">
 				
-				<h2 class="intro">Aliquam erat volutpat. Etiam feugiat non diam a auctor. Cras ante ligula, auctor a malesda a, condimentum ut diam.</h2> 
-
-				<p>Etiam dictum diam quis quam rutrum ultrices. Nunc magna sem, faucibus quis tincidunt eget, cursus eget lorem. Nulla diam lectus, rhoncus vitae faucibus sed, iaculis eget turpis. Phaselluas embedded link  <a href="">embedded link</a> rollover a mauris ut egestas. Nulla mattis tellus in lectus posuere ultrices. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vestibulum diam nisl, ultricies ut rhoncus eu, fringilla in est. Nulla pulvinar odio vitae ante pulvinar cursus auctor et nunc.</p>
-
-				<p>Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vestibulum diam nisl, ultricies ut rhoncus eu, fringilla in est. Nulla pulvinar odio vitae ante pulvinar cursus auctor et nunc. Ut vitae lectus ac purus porttitor tempus ac eu magna.</p>
-			
+				<?php the_field( 'section_three_top_content' ); ?>			
 				
 			</div><!-- sec_three_top_content -->
 			
 		</div><!-- sec_three_top -->
 		
-		<div class="sec_three_blockquote_wrapper">
+		<?php if(get_field('section_three_blockquote')) { ?>
+		
+			<div class="sec_three_blockquote_wrapper">
 				
-			<blockquote>We find the proof and hold wrongdoers accountable, no matter how powerful they may be.</blockquote>
+				<blockquote><?php the_field( 'section_three_blockquote' ); ?></blockquote>
 				
-		</div><!-- sec_three_blockquote_wrapper -->
+			</div><!-- sec_three_blockquote_wrapper -->
+		
+		<?php } ?>
 		
 		<div class="sec_three_bottom">
 			
-			<h2>Aliquam erat Aliquam erat volutpat. Etiam feugiat non diam a auctor. Cras ante ligula, auctor a malesda.</h2>
-			
-			<p>Etiam dictum diam quis quam rutrum ultrices. Nunc magna sem, faucibus quis tincidunt eget, cursus eget lorem. Nulla diam lectus, rhoncus vitae faucibus sed, iaculis eget turpis. Phaselluas imperdiet a mauris ut egestas. Nulla mattis tellus in lectus posuere ultrices.</p>
-
-			<p>Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vestibulum diam nisl, ultricies ut rhoncus eu, fringilla in est. Nulla pulvinar odio vitae ante pulvinar cursus auctor et nunc. Ut vitae lectus ac purus porttitor tempus ac eu magna. Curabitur scelerisque risus cursus arcu viverra, in tristique turpis tristique. Mauris euismod odio vestibulum arcu sagittis ullamcorper. Duis laoreet, purus eget lacinia eget lacum pellentesque, lacus dui varius augue, a euismod ipsum sem eget urna suspendisse potenti.</p>
-			
-			<p>Etiam dictum diam quis quam rutrum ultrices. Nunc magna sem, faucibus quis tincidunt eget, cursus eget lorem. Nulla diam lectus, rhoncus vitae faucibus sed embedded link. Phaselluas imperdiet a mauris ut egestas. Nulla mattis tellus in lectus posuere ultrices.</p>
-			
-			<p>Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vestibulum diam nisl, ultricies ut rhoncus eu, fringilla in est. Nulla pulvinar odio vitae ante pulvinar cursus auctor et nunc.</p>
-			
-			<h2>Aliquam erat Aliquam erat volutpat. Etiam feugiat non diam a auctor.</h2>
-			 
-			<p>Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vestibulum diam nisl, ultricies ut rhoncus eu, fringilla in est. Nulla pulvinar odio vitae ante pulvinar cursus auctor et nunc. Ut vitae lectus ac purus porttitor tempus ac eu magna. Curabitur scelerisque risus cursus arcu viverra.</p>
+			<?php the_field( 'section_three_bottom_content' ); ?>
 			
 		</div><!-- sec_three_bottom -->
 		

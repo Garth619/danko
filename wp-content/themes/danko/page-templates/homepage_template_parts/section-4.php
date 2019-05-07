@@ -8,59 +8,58 @@
 				
 				<?php echo file_get_contents("wp-content/themes/danko/images/news-city.svg"); ?>
 				
-				<span class="news_title">In the News</span><!-- news_title -->
+				<span class="news_title"><?php the_field( 'section_four_news_title' ); ?></span><!-- news_title -->
 				
 			</div><!-- news_title_wrapper -->
 			
 			<div class="news_feed">
 				
-				<div class="news_row">
-					
-					<a class="" href="<?php the_permalink(638);?>">
-					
-						<div class="news_logo">
-						
-							<img src="<?php bloginfo('template_directory');?>/images/news-kron4.png"/>
-						
-						</div><!-- news_logo -->
-					
-						<div class="news_post">
-						
-							<span class="news_date">March 9, 2019</span><!-- news_date -->
-						
-							<span class="news_title">PG&E’s Proposed Bonus Program Prioritizes Profits Over Safety</span><!-- news_title -->
-						
-							<span class="news_readmore">Read More</span><!-- news_readmore -->
-						
-						</div><!-- news_post -->
-					
-					</a>
-					
-				</div><!-- news_row -->
+				<?php if(get_field('section_four_news_posts')): ?>
+				 
+					<?php while(has_sub_field('section_four_news_posts')): ?>
+				 
+						<div class="news_row">
+							
+							<?php $post_object = get_sub_field( 'news_posts' ); ?>
+							
+							<?php if ( $post_object ): ?>
+							
+								<?php $post = $post_object; ?>
+							
+								<?php setup_postdata( $post ); ?> 
 				
-				<div class="news_row">
+									<a class="" href="<?php the_permalink();?>">
 					
-					<a class="" href="<?php the_permalink(638);?>">
+										<div class="news_logo">
+						
+											<?php $news_logo = get_sub_field( 'news_logo' ); ?>
+									
+											<img src="<?php echo $news_logo['url']; ?>" alt="<?php echo $news_logo['alt']; ?>" />
+		
+										</div><!-- news_logo -->
 					
-						<div class="news_logo">
+										<div class="news_post">
+											
 						
-							<img src="<?php bloginfo('template_directory');?>/images/news-nbc.png"/>
+											<span class="news_date"><?php $pfx_date = get_the_date(); echo $pfx_date ?></span><!-- news_date -->
 						
-						</div><!-- news_logo -->
+											<span class="news_title"><?php the_title();?></span><!-- news_title -->
+						
+											<span class="news_readmore">Read More</span><!-- news_readmore -->
+						
+										</div><!-- news_post -->
 					
-						<div class="news_post">
-						
-							<span class="news_date">January 31, 2019</span><!-- news_date -->
-						
-							<span class="news_title">PG&E’s Pledge to Compensate Fire Victims Not to be Trusted</span><!-- news_title -->
-						
-							<span class="news_readmore">Read More</span><!-- news_readmore -->
-						
-						</div><!-- news_post -->
+									</a>
+							
+								<?php wp_reset_postdata(); ?>
+		
+							<?php endif; ?>
 					
-					</a>
-					
-				</div><!-- news_row -->
+						</div><!-- news_row -->
+				    
+					<?php endwhile; ?>
+				 
+				<?php endif; ?>
 				
 			</div><!-- news_feed -->
 			
@@ -72,11 +71,21 @@
 	
 	<div class="sec_four_right" style="background:url(<?php bloginfo('template_directory');?>/images/pattern.jpg);background-size: 78px 39px;">
 		
+			
+			<?php 
+				
+				$section_four_image = get_field( 'section_four_image' ); 
+				
+				$section_four_mobile = get_field( 'section_four_mobile' );
+				
+			?>
+
+			
 			<picture>
 				
-				<source type="image/jpg" media="(max-width: 1530px)" srcset="<?php bloginfo('template_directory');?>/images/news-img-1400.jpg">
+				<source type="image/jpg" media="(max-width: 1530px)" srcset="<?php echo $section_four_mobile['url']; ?>">
 						
-				<img src="<?php bloginfo('template_directory');?>/images/news-img.jpg"/>
+				<img src="<?php echo $section_four_image['url']; ?>" alt="<?php echo $section_four_image['alt']; ?>" />
 			
 			</picture>
 

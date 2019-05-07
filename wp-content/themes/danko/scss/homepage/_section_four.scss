@@ -81,7 +81,8 @@
 			flex-shrink: 0;
 			border-right:2px solid $gold;
 			img {
-				max-width: 100%;
+				width: 100%;
+				max-width:140px;
 				height:auto;
 				display: block;
 			}
