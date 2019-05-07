@@ -18,25 +18,25 @@
 									
 									<?php if(get_sub_field('svg') == 'Medical Icon') { ?>
 						
-										<img class="<?php the_sub_field( 'class' ); ?>" src="<?php bloginfo('template_directory');?>/images/result-01.svg"/>
+										<img class="<?php the_sub_field( 'class' ); ?>" data-src="<?php bloginfo('template_directory');?>/images/result-01.svg"/>
 									
 									<?php } ?>
 									
 									<?php if(get_sub_field('svg') == 'CO2 Icon') { ?>
 						
-										<img class="<?php the_sub_field( 'class' ); ?>" src="<?php bloginfo('template_directory');?>/images/result-02.svg"/>
+										<img class="<?php the_sub_field( 'class' ); ?>" data-src="<?php bloginfo('template_directory');?>/images/result-02.svg"/>
 									
 									<?php } ?>
 									
 									<?php if(get_sub_field('svg') == 'Airplane Icon') { ?>
 						
-										<img class="<?php the_sub_field( 'class' ); ?>" src="<?php bloginfo('template_directory');?>/images/result-03.svg"/>
+										<img class="<?php the_sub_field( 'class' ); ?>" data-src="<?php bloginfo('template_directory');?>/images/result-03.svg"/>
 									
 									<?php } ?>
 									
 									<?php if(get_sub_field('svg') == 'Pedestrian Icon') { ?>
 						
-										<img class="<?php the_sub_field( 'class' ); ?>" src="<?php bloginfo('template_directory');?>/images/result-04.svg"/>
+										<img class="<?php the_sub_field( 'class' ); ?>" data-src="<?php bloginfo('template_directory');?>/images/result-04.svg"/>
 									
 									<?php } ?>
 						

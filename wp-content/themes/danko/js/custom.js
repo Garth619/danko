@@ -118,7 +118,9 @@ jQuery(document).ready(function($){
       console.log('images loaded');
     }
 
-    createWaypoint('section_one', null, null, -1, loadImages, false);
+    createWaypoint('section_one', null, null, 40, loadImages, false);
+    
+    createWaypoint('internal_main', null, null, 40, loadImages, false);
 
 
 

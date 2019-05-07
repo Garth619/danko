@@ -34,7 +34,7 @@
 						
 											<?php $news_logo = get_sub_field( 'news_logo' ); ?>
 									
-											<img src="<?php echo $news_logo['url']; ?>" alt="<?php echo $news_logo['alt']; ?>" />
+											<img data-src="<?php echo $news_logo['url']; ?>" alt="<?php echo $news_logo['alt']; ?>" />
 		
 										</div><!-- news_logo -->
 					
@@ -71,6 +71,8 @@
 	
 	<div class="sec_four_right" style="background:url(<?php bloginfo('template_directory');?>/images/pattern.jpg);background-size: 78px 39px;">
 		
+			<div class="sec_four_img_inner">
+			
 			
 			<?php 
 				
@@ -81,14 +83,14 @@
 			?>
 
 			
-			<picture>
-				
-				<source type="image/jpg" media="(max-width: 1530px)" srcset="<?php echo $section_four_mobile['url']; ?>">
-						
-				<img src="<?php echo $section_four_image['url']; ?>" alt="<?php echo $section_four_image['alt']; ?>" />
 			
-			</picture>
-
+				<img class="sec_four_desktop" data-src="<?php echo $section_four_image['url']; ?>" alt="<?php echo $section_four_image['alt']; ?>" />
+				
+						
+				<img class="sec_four_mobile" data-src="<?php echo $section_four_mobile['url']; ?>" alt="<?php echo $section_four_mobile['alt']; ?>" />
+			
+		</div><!-- sec_four_img_inner -->
+				
 	
 	</div><!-- sec_four_right -->
 	

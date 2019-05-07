@@ -25,7 +25,7 @@
 					
 					<?php $firm_footer_logo = get_field( 'firm_footer_logo','option'); ?>
 
-					<img src="<?php echo $firm_footer_logo['url']; ?>" alt="<?php echo $firm_footer_logo['alt']; ?>" />
+					<img data-src="<?php echo $firm_footer_logo['url']; ?>" alt="<?php echo $firm_footer_logo['alt']; ?>" />
 
 				</a>
 				
@@ -81,7 +81,7 @@
 					
 						<a class="ilawyer" href="//ilawyermarketing.com" target="_blank" rel="noopener">
 						
-							<img src="<?php bloginfo('template_directory');?>/images/ilawyer.svg"/>
+							<img data-src="<?php bloginfo('template_directory');?>/images/ilawyer.svg"/>
 						
 						</a>
 					
@@ -106,9 +106,7 @@
 	
 	<script type="text/javascript">
 
-		jQuery(document).ready(function($){
-
-			const vm = new Vue({
+		const vm = new Vue({
 				el: '#app',
 				data () {
 					return {
@@ -120,8 +118,6 @@
 				}
 			});
 		
-		});
-
 	</script>
 
 

@@ -23,7 +23,7 @@
 						
 						<?php $section_three_wistia_thumbnail = get_field( 'section_three_wistia_thumbnail' ); ?>
 
-						<img class="video_placeholder" src="<?php echo $section_three_wistia_thumbnail['url']; ?>" alt="<?php echo $section_three_wistia_thumbnail['alt']; ?>" />
+						<img class="video_placeholder" data-src="<?php echo $section_three_wistia_thumbnail['url']; ?>" alt="<?php echo $section_three_wistia_thumbnail['alt']; ?>" />
 						
 						<div class="mywistia wistia_embed wistia_async_<?php the_field( 'section_three_wistia_id' ); ?> popover=true popoverContent=html"></div><!-- mywistia -->
 						

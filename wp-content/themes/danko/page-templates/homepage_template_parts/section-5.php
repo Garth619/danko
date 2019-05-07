@@ -21,7 +21,7 @@
 			
 			<?php $section_five_image = get_field( 'section_five_image' ); ?>
 
-			<img src="<?php echo $section_five_image['url']; ?>" alt="<?php echo $section_five_image['alt']; ?>" />
+			<img data-src="<?php echo $section_five_image['url']; ?>" alt="<?php echo $section_five_image['alt']; ?>" />
 		
 		</div><!-- sec_five_img -->
 		

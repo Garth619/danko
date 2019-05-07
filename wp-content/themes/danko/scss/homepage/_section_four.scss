@@ -153,6 +153,11 @@ a.news_view_more {
 }
 
 
+img.sec_four_mobile {
+	display: none;
+}
+
+
 @media screen and (max-width: 1530px) {
 	
 	
@@ -194,7 +199,13 @@ a.news_view_more {
 		padding-right:45px;
 	}
 	
+	img.sec_four_mobile {
+		display: block;
+	}
 	
+	img.sec_four_desktop {
+		display: none;
+	}
 	
 	
 } /* Media Query */
