@@ -306,13 +306,26 @@ img.case_result_img {
 	
 	.cr_filter_wrapper {
 		.cr_input {
-			padding: 22px 24px;
+			padding: 16px 14px;
+			span {
+				font-size:13px;
+			}
+			.cr_input_square {
+				width: 55px;
+				&:after {
+					border-left: 7px solid transparent;
+					border-right: 7px solid transparent;
+					border-top: 7px solid #fff;
+				}
+			}
 		}
 		.cr_dropdown {
+			top: 72px;
 			ul {
 				padding:24px 24px 0;
 				li {
-					margin: 0 0 18px 0;
+					margin: 0 0 12px 0;
+					font-size:14px;
 				}
 			}
 		}

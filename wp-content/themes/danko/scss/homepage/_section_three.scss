@@ -243,7 +243,7 @@
 	
 	.sec_three_inner {
 		padding: 86px 0 0px;
-		max-width: 600px;
+		//max-width: 600px;
 		h1.sec_three_header {
 			font-size: 75px;
 			line-height: 75px;
@@ -274,7 +274,7 @@
 	
 	.sec_three_top_content {
 		padding-left:0;
-		max-width:570px;
+		//max-width:570px;
 		margin-left:auto;
 		margin-right:auto;
 	}
@@ -282,13 +282,13 @@
 	
 	.sec_three_blockquote_wrapper {
 		margin: 90px auto 0;
-		max-width: 570px;
+		// max-width: 570px;
 	}
 	
 	.sec_three_bottom {
     margin: 103px auto 0;
     column-count:1;
-    max-width:570px;
+    //max-width:570px;
 	}	
 	
 } /* Media Query */
@@ -333,6 +333,7 @@
 	.sec_three_video_wrapper {
 		margin-top:0;
 		margin-bottom: 66px;
+		max-width:100%;
 		span.sec_three_video_title {
 	   padding-top: 20px; 
     }
@@ -348,7 +349,6 @@
    
    .sec_three_blockquote_wrapper { 
 	   margin: 80px auto 0;
-	   max-width: 281px;
    }
    
    .sec_three_bottom {

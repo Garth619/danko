@@ -31,15 +31,15 @@
 			
 				if ( is_day() ) : 
 				
-					printf( __( '<span>%s</span>', 'twentyten' ), get_the_date() );
+					printf( __( '%s', 'twentyten' ), get_the_date() );
 				
 				elseif ( is_month() ) : 
 				
-					printf( __( '<span>%s</span>', 'twentyten' ), get_the_date( _x( 'F Y', 'monthly archives date format', 'twentyten' ) ) ); 
+					printf( __( '%s', 'twentyten' ), get_the_date( _x( 'F Y', 'monthly archives date format', 'twentyten' ) ) ); 
 			
 				elseif ( is_year() ) :
 				
-					printf( __( '<span>%s</span>', 'twentyten' ), get_the_date( _x( 'Y', 'yearly archives date format', 'twentyten' ) ) );
+					printf( __( '%s', 'twentyten' ), get_the_date( _x( 'Y', 'yearly archives date format', 'twentyten' ) ) );
 				
 				endif; ?>
 			
@@ -53,7 +53,7 @@
 			
 			<h1 class="banner_header">
 			
-				<?php printf( __( '%s', 'twentyten' ), '<span>' . single_cat_title( '', false ) . '</span>' );?>
+				<?php printf( __( '%s', 'twentyten' ), '' . single_cat_title( '', false ) . '' );?>
 		
 			</h1><!-- banner_header -->
 			

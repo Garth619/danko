@@ -25,7 +25,7 @@
 
 
 .sec_five_top {
-	max-width:1020px;
+	//max-width:1020px;
 	margin:0 auto;
 }
 
@@ -64,6 +64,7 @@
 	
 	.sec_five_inner {
 		padding: 155px 0 100px;
+		
 		blockquote {
 			margin-bottom: 94px;
 		}
@@ -76,6 +77,10 @@
 	
 	.sec_five_img {
 		flex-basis:500px;
+		img {
+			margin-left:auto;
+			margin-right:auto;
+		}
 	}
 	
 	
@@ -120,7 +125,6 @@
 	
 	.sec_five_inner {
 		padding: 87px 0px 27px;
-		max-width:300px;
 		blockquote {
 			margin-bottom: 62px;
 		}
