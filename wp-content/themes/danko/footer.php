@@ -23,32 +23,57 @@
 				
 				<a class="" href="<?php bloginfo('url');?>">
 					
-					<img src="<?php bloginfo('template_directory');?>/images/logo-footer.svg"/>
-					
+					<?php $firm_footer_logo = get_field( 'firm_footer_logo','option'); ?>
+
+					<img src="<?php echo $firm_footer_logo['url']; ?>" alt="<?php echo $firm_footer_logo['alt']; ?>" />
+
 				</a>
 				
 			</div><!-- footer_col_one -->
 			
 			<div class="footer_col_two footer_col">
 				
-				<span class="address">333 Twin Dolphin Dr #145 Redwood Shores, CA 94065</span><!-- address -->
+				<span class="address"><?php the_field( 'firm_street_address','option'); ?></span><!-- address -->
 
-				<a class="footer_tel" href="tel:6504533600">(650) 453-3600</a><!-- footer_tel -->
+				<a class="footer_tel" href="tel:<?php echo str_replace(['-', '(', ')', ' '], '', get_field('firm_phone', 'option')); ?>"><?php the_field( 'firm_phone' ); ?></a><!-- footer_tel -->
 				
-				<a class="footer_get_directions" href="https://www.google.com/maps/place/333+Twin+Dolphin+Dr+%23145,+Redwood+City,+CA+94065/data=!4m2!3m1!1s0x808f98aee7386455:0x75010db6d1e2bd1c?sa=X&ved=2ahUKEwirtr6EqofiAhVYip4KHVfPAYYQ8gEwAHoECAoQAQ" target="_blank" rel="noopener">Get Directions</a><!-- footer_get_directions -->
+				<a class="footer_get_directions" href="<?php the_field( 'firm_directions_link','option'); ?>" target="_blank" rel="noopener">Get Directions</a><!-- footer_get_directions -->
 				
 			</div><!-- footer_col_two -->
 			
 			<div class="footer_col_three footer_col">
 				
 				<div class="footer_col_three_inner">
-				
-					<ul>
-						<li><a class="" href="https://www.aviationlawmonitor.com" target="_blank" rel="noopener">Aviation Blog</a></li>
-						<li><a class="" href="<?php the_permalink(12);?>">Personal Injury Blog</a></li>
-						<li><a class="" href="<?php the_permalink(863);?>">Privacy Policy</a></li>
-						<li><a class="" href="<?php the_permalink(865);?>">Disclaimer</a></li>
-					</ul>
+					
+					<?php if(get_field('footer_links','option')): ?>
+						
+						<ul>
+					 
+						<?php while(has_sub_field('footer_links','option')): ?>
+					 
+							<?php if(get_sub_field('internal_or_outside_link') == 'Outside Link') : ?>
+							
+								<li><a class="" href="<?php the_sub_field( 'outside_link' ); ?>" target="_blank" rel="noopener"><?php the_sub_field( 'outside_link_title' ); ?></a></li>
+								
+								<?php else:
+							
+									$post_object = get_sub_field( 'internal_link' );
+								
+									$post = $post_object;
+								
+									setup_postdata( $post ); ?>
+								
+										<li><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></li>
+								
+										<?php wp_reset_postdata();
+
+							endif;
+							   
+						endwhile; ?>
+						
+						</ul>
+					 
+					<?php endif; ?>
 				
 					<div class="copyright_wrapper">
 					
