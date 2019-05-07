@@ -55,7 +55,9 @@
 			
 			<a class="logo" href="<?php bloginfo('url');?>">
 				
-				<img src="<?php bloginfo('template_directory');?>/images/logo.svg"/>
+				<?php $firm_logo = get_field( 'firm_logo','option'); ?>
+				
+				<img src="<?php echo $firm_logo['url']; ?>" alt="<?php echo $firm_logo['alt']; ?>" />
 				
 			</a><!-- logo -->
 			
@@ -105,7 +107,9 @@
 			
 				<span class="free_consultation">Free Consultation</span><!-- free_consultation -->
 			
-				<a class="tel" href="">(650) 453-3600</a><!-- tel -->
+				<a class="tel" href="tel:<?php echo str_replace(['-', '(', ')', ' '], '', get_field('firm_phone', 'option')); ?>"><?php the_field( 'firm_phone','option'); ?></a><!-- tel -->
+				
+				
 			
 			</div><!-- header_right_inner -->
 			

@@ -44,13 +44,13 @@
 		
 		<div class="sec_three_blockquote_wrapper">
 				
-			<blockquote>We find the proof and hold wrongdoers accountable, no matter how powerful they may be.</blockquote>
+			<blockquote>We find the proof and hold wrongdoers accountable, no matter how powerful they may be.</blockquote>
 				
 		</div><!-- sec_three_blockquote_wrapper -->
 		
 		<div class="sec_three_bottom">
 			
-			<h2>Aliquam erat Aliquam erat volutpat. Etiam feugiat non diam a auctor. Cras ante ligula, auctor a malesda.</h2>
+			<h2>Aliquam erat Aliquam erat volutpat. Etiam feugiat non diam a auctor. Cras ante ligula, auctor a malesda.</h2>
 			
 			<p>Etiam dictum diam quis quam rutrum ultrices. Nunc magna sem, faucibus quis tincidunt eget, cursus eget lorem. Nulla diam lectus, rhoncus vitae faucibus sed, iaculis eget turpis. Phaselluas imperdiet a mauris ut egestas. Nulla mattis tellus in lectus posuere ultrices.</p>
 

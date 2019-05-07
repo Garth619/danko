@@ -4,141 +4,69 @@
 		
 		<div class="sec_two_slider">
 			
-			<div class="sec_two_single_slide">
+			<?php if(get_field('section_two_cases')): ?>
+			 
+				<?php while(has_sub_field('section_two_cases')): ?>
+			 
+					<div class="sec_two_single_slide">
 				
-				<div class="sec_two_reg">
+						<div class="sec_two_reg">
 					
-					<div class="sec_two_reg_inner">
+							<div class="sec_two_reg_inner">
 						
-						<div class="img_wrapper">
+								<div class="img_wrapper">
+									
+									<?php if(get_sub_field('svg') == 'Medical Icon') { ?>
 						
-							<img class="one" src="<?php bloginfo('template_directory');?>/images/result-01.svg"/>
+										<img class="<?php the_sub_field( 'class' ); ?>" src="<?php bloginfo('template_directory');?>/images/result-01.svg"/>
+									
+									<?php } ?>
+									
+									<?php if(get_sub_field('svg') == 'CO2 Icon') { ?>
 						
-						</div><!-- img_wrapper -->
+										<img class="<?php the_sub_field( 'class' ); ?>" src="<?php bloginfo('template_directory');?>/images/result-02.svg"/>
+									
+									<?php } ?>
+									
+									<?php if(get_sub_field('svg') == 'Airplane Icon') { ?>
 						
-						<span class="sec_two_amount">$50m</span><!-- sec_two_amount -->
+										<img class="<?php the_sub_field( 'class' ); ?>" src="<?php bloginfo('template_directory');?>/images/result-03.svg"/>
+									
+									<?php } ?>
+									
+									<?php if(get_sub_field('svg') == 'Pedestrian Icon') { ?>
 						
-						<span class="sec_two_type">Wrongful Death</span><!-- sec_two_type -->
+										<img class="<?php the_sub_field( 'class' ); ?>" src="<?php bloginfo('template_directory');?>/images/result-04.svg"/>
+									
+									<?php } ?>
 						
-						<span class="sec_two_content">Our client was walking down the sidewalk on her lunch break when there was an explosion in an underground electrical vault that blew off a manhole cover and severely burned her.</span><!-- sec_two_content -->
+								</div><!-- img_wrapper -->
 						
-					</div><!-- sec_two_reg_inner -->
+								<span class="sec_two_amount"><?php the_sub_field( 'case_amount' ); ?></span><!-- sec_two_amount -->
+						
+								<span class="sec_two_type"><?php the_sub_field( 'case_type' ); ?></span><!-- sec_two_type -->
+						
+								<span class="sec_two_content"><?php the_sub_field( 'case_description' ); ?></span><!-- sec_two_content -->
+						
+							</div><!-- sec_two_reg_inner -->
 				
-				<div class="sec_two_hover">
+							<div class="sec_two_hover">
 					
-						<span class="sec_two_hover_title">Wrongful Death</span><!-- sec_two_hover_title -->
+								<span class="sec_two_hover_title"><?php the_sub_field( 'case_type' ); ?></span><!-- sec_two_hover_title -->
 					
-						<span class="sec_two_content">Our client was walking down the sidewalk on her lunch break when there was an explosion in an underground electrical vault that blew off a manhole cover and severely burned her.</span><!-- sec_two_content -->
+								<span class="sec_two_content"><?php the_sub_field( 'case_description' ); ?></span><!-- sec_two_content -->
 						
-						<a class="sec_two_readmore" href="<?php the_permalink(54);?>">Read More</a><!-- sec_two_readmore -->
+								<a class="sec_two_readmore" href="<?php the_sub_field( 'read_more_link' ); ?>">Read More</a><!-- sec_two_readmore -->
 					
-				</div><!-- sec_two_hover -->
+							</div><!-- sec_two_hover -->
 				
-				</div><!-- sec_two_reg -->
+						</div><!-- sec_two_reg -->
 				
-			</div><!-- sec_two_single_slide -->
-			
-			<div class="sec_two_single_slide">
-				
-				<div class="sec_two_reg">
-					
-					<div class="sec_two_reg_inner">
-						
-						<div class="img_wrapper">
-						
-							<img class="two" src="<?php bloginfo('template_directory');?>/images/result-02.svg"/>
-						
-						</div><!-- img_wrapper -->
-						
-						<span class="sec_two_amount">$50m</span><!-- sec_two_amount -->
-						
-						<span class="sec_two_type">Gas Pipe Explosion</span><!-- sec_two_type -->
-						
-						<span class="sec_two_content">Our client was walking down the sidewalk on her lunch break when there was an explosion in an underground electrical vault that blew off a manhole cover and severely burned her.</span><!-- sec_two_content -->
-						
-					</div><!-- sec_two_reg_inner -->
-				
-				<div class="sec_two_hover">
-					
-					<span class="sec_two_hover_title">Wrongful Death</span><!-- sec_two_hover_title -->
-					
-					<span class="sec_two_content">Our client was walking down the sidewalk on her lunch break when there was an explosion in an underground electrical vault that blew off a manhole cover and severely burned her.</span><!-- sec_two_content -->
-					
-					<a class="sec_two_readmore" href="<?php the_permalink(54);?>">Read More</a><!-- sec_two_readmore -->
-					
-				</div><!-- sec_two_hover -->
-				
-				</div><!-- sec_two_reg -->
-				
-			</div><!-- sec_two_single_slide -->
-			
-			<div class="sec_two_single_slide">
-				
-				<div class="sec_two_reg">
-					
-					<div class="sec_two_reg_inner">
-						
-						<div class="img_wrapper">
-						
-							<img class="three" src="<?php bloginfo('template_directory');?>/images/result-03.svg"/>
-						
-						</div><!-- img_wrapper -->
-						
-						<span class="sec_two_amount">$14.9m</span><!-- sec_two_amount -->
-						
-						<span class="sec_two_type">Airplane Accident</span><!-- sec_two_type -->
-						
-						<span class="sec_two_content">Our client was walking down the sidewalk on her lunch break when there was an explosion in an underground electrical vault that blew off a manhole cover and severely burned her.</span><!-- sec_two_content -->
-						
-					</div><!-- sec_two_reg_inner -->
-				
-				<div class="sec_two_hover">
-					
-					<span class="sec_two_hover_title">Wrongful Death</span><!-- sec_two_hover_title -->
-					
-					<span class="sec_two_content">Our client was walking down the sidewalk on her lunch break when there was an explosion in an underground electrical vault that blew off a manhole cover and severely burned her.</span><!-- sec_two_content -->
-					
-					<a class="sec_two_readmore" href="<?php the_permalink(54);?>">Read More</a><!-- sec_two_readmore -->
-					
-				</div><!-- sec_two_hover -->
-				
-				</div><!-- sec_two_reg -->
-				
-			</div><!-- sec_two_single_slide -->
-			
-			<div class="sec_two_single_slide">
-				
-				<div class="sec_two_reg">
-					
-					<div class="sec_two_reg_inner">
-						
-						<div class="img_wrapper">
-						
-							<img class="four" src="<?php bloginfo('template_directory');?>/images/result-04.svg"/>
-						
-						</div><!-- img_wrapper -->
-						
-						<span class="sec_two_amount">$9.5m</span><!-- sec_two_amount -->
-						
-						<span class="sec_two_type">Pedestrian Accident</span><!-- sec_two_type -->
-						
-						<span class="sec_two_content">Our client was walking down the sidewalk on her lunch break when there was an explosion in an underground electrical vault that blew off a manhole cover and severely burned her.</span><!-- sec_two_content -->
-						
-					</div><!-- sec_two_reg_inner -->
-				
-				<div class="sec_two_hover">
-					
-					<span class="sec_two_hover_title">Wrongful Death</span><!-- sec_two_hover_title -->
-					
-					<span class="sec_two_content">Our client was walking down the sidewalk on her lunch break when there was an explosion in an underground electrical vault that blew off a manhole cover and severely burned her.</span><!-- sec_two_content -->
-					
-					<a class="sec_two_readmore" href="<?php the_permalink(54);?>">Read More</a><!-- sec_two_readmore -->
-					
-				</div><!-- sec_two_hover -->
-				
-				</div><!-- sec_two_reg -->
-				
-			</div><!-- sec_two_single_slide -->
+					</div><!-- sec_two_single_slide -->
+			    
+				<?php endwhile; ?>
+			 
+			<?php endif; ?>
 			
 		</div><!-- sec_two_slider -->
 		
