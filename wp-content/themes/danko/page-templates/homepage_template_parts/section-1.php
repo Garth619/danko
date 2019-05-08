@@ -15,22 +15,24 @@
 							
 					$section_one_banner_image_mobile_webp = get_field( 'section_one_banner_image_mobile_webp' );
 						
-				?>
+			?>
 			
 			
 			<picture>
 					
-				<source type="image/webp" media="(max-width: 767px)" srcset="<?php echo $section_one_banner_image_mobile_webp['url']; ?>">
+				<source media="(max-width: 767px)" type="image/webp" srcset="<?php echo $section_one_banner_image_mobile_webp['url']; ?>">
 				
-				<source type="image/jpg" media="(max-width: 767px)" srcset="<?php echo $section_one_banner_image_mobile['url']; ?>">
+				<source media="(max-width: 767px)" type="image/jpg" srcset="<?php echo $section_one_banner_image_mobile['url']; ?>">
 						
-				<source type="image/webp" media="(max-width: 1175px)" srcset="<?php echo $section_one_banner_image_tablet_webp['url']; ?>">
+				<source media="(max-width: 1175px)" type="image/webp" srcset="<?php echo $section_one_banner_image_tablet_webp['url']; ?>">
 				
-				<source type="image/jpg" media="(max-width: 1175px)" srcset="<?php echo $section_one_banner_image_tablet['url']; ?>">
+				<source media="(max-width: 1175px)" type="image/jpg" srcset="<?php echo $section_one_banner_image_tablet['url']; ?>">
 						
 				<img src="<?php echo $section_one_banner_image['url']; ?>" alt="<?php echo $section_one_banner_image['alt']; ?>"/>
 			
 			</picture>
+			
+			
 			
 		</div><!-- sec_one_left -->
 		
